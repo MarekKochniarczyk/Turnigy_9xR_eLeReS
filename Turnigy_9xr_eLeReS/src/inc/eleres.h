@@ -16,6 +16,11 @@
 
 #ifndef eleres_h
 #define eleres_h
+	void menuProc_eleres1(uint8_t event);
+	void menuProc_eleres2(uint8_t event);
+	void menuProc_eleres3(uint8_t event);
+	void title(char x);
+	void initval(uint8_t num, uint8_t pack, uint8_t val);
 	void ELERES_Init(void);
 	void Check_ELERES(void);
 	void ELERES_EnableRXD (void);

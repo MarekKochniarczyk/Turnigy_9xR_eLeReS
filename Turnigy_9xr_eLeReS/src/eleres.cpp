@@ -24,8 +24,6 @@
 const
 #include "lbm/ant.lbm"
 
-#define APSIZE (BSS | DBLSIZE)
-
 
 #define RX_BUFF_SIZE	64
 #define MAX_COUNT_NO_FRAME 100 //200*10ms = 2000ms
@@ -43,33 +41,46 @@ typedef enum{
 typedef struct {
 	uint8_t count_no_frame;
 	st status;
-	char value[10];
+	char value[12];
 }dt;
 
 #define SIZE_DT 23
 dt DT[SIZE_DT];
 
 enum {
+
+	//RSSI=100 RCQ=100 U=01.5V T=13\0xb0C P=51007 F=01 I=00.0A
 	RSSI,	//= siła sygnału (RSSI=100)
 	RCQ,	//= jakość sygnału (RCQ=100)
-	URX,	//= napięcie w modelu (U=04.9V)
-	T,		//= temperatura odbiornika (T=29°C)
-	I,		//= prąd poboru z odbiornika
-	t,		//= czas z gps (t=00:00:00)
-	CH,		//= to wartosci 8 kanalow RC z nadajnika w HEX 00-FF, 80 srodek. (CH=7E82028000808080939C0000)
+	VRX,	//= napięcie w modelu (U=04.9V)
+	Temp,	//= temperatura odbiornika (T=29°C)
 	P,		//= to cisnienie z czujnika baro. (P=51010)
 	F,		//= to tryb lotu MuliWii. (F=04)
+	Amp,		//= prąd poboru z odbiornika
+
+
+	CH,		//= to wartosci 8 kanalow RC z nadajnika w HEX 00-FF, 80 srodek. (CH=7E82028000808080939C0000)
+
 	Deb1,	//= to wartosci zmiennych debug z MuliWii. (Deb=00000 00000 00000 00000)
 	Deb2,	//= to wartosci zmiennych debug z MuliWii. (Deb=00000 00000 00000 00000)
 	Deb3,	//= to wartosci zmiennych debug z MuliWii. (Deb=00000 00000 00000 00000)
 	Deb4,	//= to wartosci zmiennych debug z MuliWii. (Deb=00000 00000 00000 00000)
-	Pos,	//= to pozycja GPS (Pos=00.000000N, 000.000000E)
-	f,		//= to FIX GPS 0=brak, 1=2D fix, 2=3D fix (f=0)
-	s,		//= to ilosc satelit (s=00)
-	c,		//= to kurs w stopniach (c=021)
-	v,		//= to predkosc w km/h (v=000)
-	h,		//= to wysokosc w metrach (h=0000)
-	UTX,	//= to napiecie baterii nadajnika RC (UTX=00.6V)
+
+	//Pos=50.319569N, 019.153139E HD=00.0
+	Pos_LAT,//= to pozycja GPS 00.000000N, latitude
+	Pos_LON,//= to pozycja GPS 00.000000N, longtitude
+	HDOP,	//= to Horizontal Dilution of Precision
+
+	//t=18:19:45 f=1 s=04 c=279 v=000 h=0273
+	time,		//= czas z gps (t=00:00:00)
+	fix,		//= to FIX GPS 0=brak, 1=2D fix, 2=3D fix (f=0)
+	sat,		//= to ilosc satelit (s=00)
+	course,		//= to kurs w stopniach (c=021)
+	speed,		//= to predkosc w km/h (v=000)
+	alt,		//= to wysokosc w metrach (h=0000)
+
+	//UTX=11.7V STX=100 TTX=28\0xb0C
+	VTX,	//= to napiecie baterii nadajnika RC (UTX=00.6V)
 	STX,
 	TTX,	//to temperatura nadajnika
 
@@ -77,15 +88,10 @@ enum {
 
 
 
-void menuProc_eleres1(uint8_t event);
-void menuProc_eleres2(uint8_t event);
-void menuProc_eleres3(uint8_t event);
-void title(char x);
-void initval(uint8_t num, uint8_t pack, uint8_t val);
 
-
-//--------------------------------------------------------------------------
-// Called every 10 mS in interrupt routine
+/*------------------------------------------------------------------------*//**
+* \brief Called every 10 mS in interrupt routine
+*//*-------------------------------------------------------------------------*/
 void Check_ELERES(void){
 
 	for(uint8_t i = 0; i < SIZE_DT;i++){
@@ -99,88 +105,94 @@ void Check_ELERES(void){
 	}
 }
 
-//--------------------------------------------------------------------------
+/*------------------------------------------------------------------------*//**
+* \brief Check frame form eLeReS
+* \param pointer to finding string
+*//*-------------------------------------------------------------------------*/
 uint8_t Find_ID(const char *ptr){
 
 	uint8_t len = strlen(ptr);
 
-	for(uint8_t idx = 0; idx < RX_BUFF_SIZE - len; idx++){
-
-		if( strncmp((char*)&Rxbuff[idx],ptr,len) == 0){
-			return idx + len + 1;
-		}
-
+	if( strncmp((char*)Rxbuff,ptr,len) == 0){
+		return 1;
 	}
-
-	return -1;
+	return 0;
 }
-//--------------------------------------------------------------------------
+/*------------------------------------------------------------------------*//**
+* \brief Check frame form eLeReS
+*//*-------------------------------------------------------------------------*/
 void Check_Date (void){
 
-	//RSSI=100 RCQ=100 U=00.0V T=20\0xb0C P=51025 F=01 I=00.0A
-	int8_t idx = 0;
+	//RSSI=100 RCQ=100 U=01.5V T=13\0xb0C P=51007 F=01 I=00.0A
+	//Pos=50.319569N, 019.153139E HD=00.0
+	//t=18:19:45 f=1 s=04 c=279 v=000 h=0273
+	//CH=8080007F0000000080808080
+	//UTX=11.7V STX=100 TTX=28\0xb0C
+	//Deb= 00000  00000  00000  00000
 
-	if( (idx = Find_ID("RSSI")) >= 0){
+	char *ptr = (char*)&Rxbuff;
 
-		memcpy(DT[RSSI].value,&Rxbuff[idx],3);
-		DT[RSSI].value[4] = '\0';
-		DT[RSSI].count_no_frame = 0;
-		DT[RSSI].status = date_ok;
+	//RSSI=100 RCQ=100 U=01.5V T=13\0xb0C P=51007 F=01 I=00.0A
+	if(Find_ID("RSSI")){
 
-		if( (idx = Find_ID("RCQ")) >= 0){
-			memcpy(DT[RCQ].value,&Rxbuff[idx],3);
-			DT[RCQ].value[3] = '%';
-			DT[RCQ].value[4] = '\0';
-			DT[RCQ].count_no_frame = 0;
-			DT[RCQ].status = date_ok;
+		memcpy(DT[RSSI].value,ptr+5,3);
+		memcpy(DT[RCQ].value,ptr+13,3);
+		DT[RCQ].value[3] = '%';
+		memcpy(DT[VRX].value,ptr+19,5);
+		//memcpy(DT[Temp].value,&Rxbuff[idx],2);
+		//memcpy(DT[P].value,&Rxbuff[idx],5);
+		//memcpy(DT[F].value,&Rxbuff[idx],2);
+
+		for(uint8_t i = RSSI; i < Amp+1; i++){
+			DT[i].count_no_frame = 0;
+			DT[i].status = date_ok;
 		}
 
-		if( (idx = Find_ID("U")) >= 0){
-			memcpy(DT[URX].value,&Rxbuff[idx],5);
-			DT[URX].value[5] = '\0';
-			DT[URX].status = date_ok;
-			DT[URX].count_no_frame = 0;
-		}
+	}else //UTX=12.0V STX=092 TTX=38\0xb0C
+		if( Find_ID("UTX")){
 
-		if( (idx = Find_ID("T")) >= 0){
-			memcpy(DT[T].value,&Rxbuff[idx],2);
-		}
-
-		if( (idx = Find_ID("P")) >= 0){
-			memcpy(DT[P].value,&Rxbuff[idx],5);
-		}
-
-		if( (idx = Find_ID("F")) >= 0){
-			memcpy(DT[F].value,&Rxbuff[idx],2);
-
-		}
-
-	}else {
-
-		//UTX=12.0V STX=092 TTX=38\0xb0C
-		if( (idx = Find_ID("UTX")) >= 0){
-
-			memcpy(DT[UTX].value,&Rxbuff[idx],4);
-			DT[UTX].value[4] = 'V';
-			DT[UTX].value[5] = '\0';
-			DT[UTX].status = date_ok;
-			DT[UTX].count_no_frame = 0;
-
-			if( (idx = Find_ID("STX")) >= 0){
-				memcpy(DT[STX].value,&Rxbuff[idx],3);
-				DT[STX].status = date_ok;
+			memcpy(DT[VTX].value,ptr+3,4);
+			memcpy(DT[STX].value,ptr+10,3);
+			memcpy(DT[TTX].value,ptr+18,2);
+			for(uint8_t i = VTX; i < TTX+1; i++){
+				DT[i].count_no_frame = 0;
+				DT[i].status = date_ok;
 			}
 
-			if( (idx = Find_ID("TTX")) >= 0){
-				memcpy(DT[TTX].value,&Rxbuff[idx],2);
-				DT[TTX].status = date_ok;
+	}else//Pos=50.319569N, 019.153139E HD=00.0
+
+		if( Find_ID("Pos") ){
+
+			memcpy(DT[Pos_LAT].value,ptr+4,10);
+			memcpy(DT[Pos_LON].value,ptr+16,11);
+			memcpy(DT[HDOP].value,ptr+31,4);
+			for(uint8_t i = Pos_LAT; i < HDOP+1; i++){
+				DT[i].count_no_frame = 0;
+				DT[i].status = date_ok;
 			}
-		}
+
+	}else//t=18:19:45 f=1 s=04 c=279 v=000 h=0273
+		if( Find_ID("t=")){
+
+			memcpy(DT[time].value,ptr+2,8);
+			memcpy(DT[fix].value,ptr+13,1);DT[fix].value[1] = '\0';
+			memcpy(DT[sat].value,ptr+17,2);
+			memcpy(DT[course].value,ptr+22,3);
+			memcpy(DT[speed].value,ptr+28,3);
+			memcpy(DT[alt].value,ptr+34,4);
+
+			for(uint8_t i = time; i < alt+1; i++){
+				DT[i].count_no_frame = 0;
+				DT[i].status = date_ok;
+			}
 
 
 	}
+
 }
-//--------------------------------------------------------------------------
+/*------------------------------------------------------------------------*//**
+* \brief Interrupt form USART0
+*//*-------------------------------------------------------------------------*/
 ISR (USART0_RX_vect){
 
     uint8_t iostat;
@@ -188,10 +200,6 @@ ISR (USART0_RX_vect){
 
     if (iostat & ((1 << FE0) | (1 << DOR0) | (1 << UPE0))){
         Rx_count = 0;
-        //if(iostat & ((1 << FE0)))stat_frame |= 0x02;
-        //if(iostat & ((1 << DOR0)))stat_frame |= 0x04;
-        //if(iostat & ((1 << UPE0)))stat_frame |= 0x08;
-        //return;
     }
 
     Rxbuff[Rx_count] = UDR0;
@@ -205,7 +213,9 @@ ISR (USART0_RX_vect){
 
 }
 
-//--------------------------------------------------------------------------
+/*------------------------------------------------------------------------*//**
+* \brief Initialize port
+*//*-------------------------------------------------------------------------*/
 void ELERES_Init (void){
 
 	stat_frame = 0;
@@ -227,30 +237,40 @@ void ELERES_Init (void){
     stat_frame  |= 0x01;
 
 }
-//--------------------------------------------------------------------------
+/*------------------------------------------------------------------------*//**
+* \brief OFF POrt
+*//*-------------------------------------------------------------------------*/
 void ELERES_DisableRXD (void){
 
     UCSR0B &= ~(1 << RXEN0);            // disable RX
     UCSR0B &= ~(1 << RXCIE0);           // disable Interrupt
 }
-//--------------------------------------------------------------------------
+/*------------------------------------------------------------------------*//**
+* \brief On port USART and zeroing date
+*//*-------------------------------------------------------------------------*/
 void ELERES_EnableRXD (void){
 
     Rx_count  = 0;
     for(uint8_t i =0; i < SIZE_DT;i++){
-    	memcpy(DT[i].value,"??\0\0\0\0\0\0",8);
+    	memcpy(DT[i].value,"??\0\0\0\0\0\0\0\0\0\0",12);
     	DT[i].status = no_date;
     	DT[i].count_no_frame = 0;
     }
     UCSR0B |=  (1 << RXEN0);		    // enable RX
     UCSR0B |=  (1 << RXCIE0);		    // enable Interrupt
 }
-//--------------------------------------------------------------------------
+/*------------------------------------------------------------------------*//**
+* \brief
+* \param event key
+*//*-------------------------------------------------------------------------*/
 void menuProceLeReS(uint8_t event){
 
     menuProc_eleres1(event);
 }
-//--------------------------------------------------------------------------
+/*------------------------------------------------------------------------*//**
+* \brief Display screen 1
+* \param event key
+*//*-------------------------------------------------------------------------*/
 void menuProc_eleres1(uint8_t event){
     switch(event)						// new event received, branch accordingly
     {
@@ -276,17 +296,17 @@ void menuProc_eleres1(uint8_t event){
     	per = atoi(DT[RCQ].value);
     }
 
-    lcd_puts_P  (0*FW, 4*FH, PSTR("UTx:"));
-    lcd_putsAtt(4*FW, 4*FH,DT[URX].value,BSS);
+    lcd_puts_P  (0*FW, 4*FH, PSTR("VRx:"));
+    lcd_putsAtt(4*FW, 4*FH,DT[VRX].value,BSS);
 
     lcd_hbar( 35, 17, 90, 14, per);
-    //if(DT[RSSI].status == no_date){
-    //	lcd_putsAtt(5*FW, 3*FH,PSTR("No Telemetry!!"),BLINK|DBLSIZE);
-    //}
-
 
 }
 
+/*------------------------------------------------------------------------*//**
+* \brief Display screen 2
+* \param event key
+*//*-------------------------------------------------------------------------*/
 void menuProc_eleres2(uint8_t event)
 {
     switch(event)
@@ -305,12 +325,22 @@ void menuProc_eleres2(uint8_t event)
     //initval (0, PACK_RSSI, 1);
     //initval (1, PACK_RSSI, 3);
     title ('2');
-    lcd_puts_P  (1*FW, 1*FH, PSTR("RSSI    RCQ"));
-    //lcd_putsAtt (2*FW, 2*FH, VALSTR(0), APSIZE);
-    lcd_puts_P  (1*FW, 4*FH, PSTR("voltage   tempe") );
-    //lcd_putsAtt (2*FW, 5*FH, VALSTR(1), APSIZE);
-}
+    lcd_puts_P  (1*FW, 2*FH, PSTR("LATIT.:"));
+    lcd_putsAtt (10*FW, 2*FH, DT[Pos_LAT].value,BSS);
+    lcd_puts_P  (1*FW, 3*FH, PSTR("LONG. :"));
+    lcd_putsAtt (10*FW, 3*FH, DT[Pos_LON].value,BSS);
 
+    lcd_hline(0,25,128);
+
+    lcd_puts_P  (1*FW, 5*FH, PSTR("TIME:") );
+    lcd_putsAtt (7*FW, 5*FH, DT[time].value,BSS);
+    lcd_puts_P  (1*FW, 6*FH, PSTR("HDOP:"));
+    lcd_putsAtt (7*FW, 6*FH, DT[HDOP].value,BSS);
+}
+/*------------------------------------------------------------------------*//**
+* \brief Display screen 3
+* \param event key
+*//*-------------------------------------------------------------------------*/
 void menuProc_eleres3(uint8_t event)
 
 {
@@ -328,42 +358,31 @@ void menuProc_eleres3(uint8_t event)
         break;
     }
 
-	//initval (0, PACK_T, 2);
-    //initval (1, PACK_T, 3);
 	title ('3');
 
-    lcd_puts_P  (1*FW, 1*FH, PSTR(" fix | sat | K"));
-    //lcd_putsAtt (2*FW, 2*FH, VALSTR(0), APSIZE);
-    lcd_puts_P  (1*FW, 4*FH, PSTR("speed | height") );
-    //lcd_putsAtt (2*FW, 5*FH, VALSTR(1), APSIZE);
-}
+    lcd_puts_P  (FW, 2*FH, PSTR(" FIX | SAT | COURSE"));
+    lcd_putsAtt  (3*FW, 3*FH, DT[fix].value,BSS);
+    lcd_putsAtt  (8*FW, 3*FH, DT[sat].value,BSS);
+    lcd_putsAtt  (15*FW, 3*FH, DT[course].value,BSS);
 
+    lcd_hline(0,25,128);
+
+    lcd_puts_P  (2*FW, 5*FH, PSTR("SPEED | ALTITUDE") );
+    lcd_putsAtt  (3*FW, 6*FH, DT[speed].value,BSS);
+    lcd_putsAtt  (12*FW, 6*FH, DT[alt].value,BSS);
+
+}
+/*------------------------------------------------------------------------*//**
+* \brief Display title screen
+* \param number screen
+*//*-------------------------------------------------------------------------*/
 void title(char x){
 
 	uint8_t stat = 0;
 	if(DT[RSSI].status == no_date){
 		stat = BLINK;
 	}
-
-    lcd_putsAtt (0, 0, PSTR(" eLeReS Telemetry ?/8"),stat);
+    lcd_putsAtt (0, 0, PSTR(" eLeReS Telemetry ?/3"),stat);
     lcd_putcAtt(18*FW, 0*FH, x, stat);
     lcd_hline(0,0,128);
-}
-
-void initval(uint8_t num, uint8_t pack, uint8_t val)
-{
-	/*
-    rbuf[0][0] = '1';
-    rbuf[1][0] = '2';
-
-    return;
-    if (xpack[num] != pack || xval[num] != val)
-    {
-        ibuf[num] = rbuf[num][0] = 0;
-		rbuf[num][0]=0; //zerowanie bufora
-        xpack[num] = pack;
-        xval[num] = val;
-        state = WAIT_PACKET;			// synchronize to the next packet
-    }
-    */
 }
