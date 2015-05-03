@@ -24,7 +24,6 @@
 const
 #include "lbm/ant.lbm"
 
-//#define VALSTR(val)  (rbuf[val][0] ? rbuf[val] : val_unknown)
 #define APSIZE (BSS | DBLSIZE)
 
 
@@ -81,11 +80,6 @@ enum {
 void menuProc_eleres1(uint8_t event);
 void menuProc_eleres2(uint8_t event);
 void menuProc_eleres3(uint8_t event);
-void menuProc_eleres4(uint8_t event);
-void menuProc_eleres5(uint8_t event);
-void menuProc_eleres6(uint8_t event);
-void menuProc_eleres7(uint8_t event);
-void menuProc_eleres8(uint8_t event);
 void title(char x);
 void initval(uint8_t num, uint8_t pack, uint8_t val);
 
@@ -261,14 +255,10 @@ void menuProc_eleres1(uint8_t event){
     switch(event)						// new event received, branch accordingly
     {
     case EVT_KEY_FIRST(KEY_UP):
-        chainMenu(menuProc_eleres8);
+        chainMenu(menuProc_eleres3);
         break;
     case EVT_KEY_FIRST(KEY_DOWN):
         chainMenu(menuProc_eleres2);
-        break;
-    case EVT_KEY_FIRST(KEY_MENU):
-        //ELERES_DisableRXD();
-        //chainMenu(menuProcStatistic);
         break;
     case EVT_KEY_FIRST(KEY_EXIT):
         ELERES_DisableRXD();
@@ -322,6 +312,7 @@ void menuProc_eleres2(uint8_t event)
 }
 
 void menuProc_eleres3(uint8_t event)
+
 {
     switch(event)
     {
@@ -329,7 +320,7 @@ void menuProc_eleres3(uint8_t event)
         chainMenu(menuProc_eleres2);
         break;
     case EVT_KEY_FIRST(KEY_DOWN):
-        chainMenu(menuProc_eleres4);
+        chainMenu(menuProc_eleres1);
         break;
     case EVT_KEY_FIRST(KEY_EXIT):
         ELERES_DisableRXD();
@@ -344,134 +335,6 @@ void menuProc_eleres3(uint8_t event)
     lcd_puts_P  (1*FW, 1*FH, PSTR(" fix | sat | K"));
     //lcd_putsAtt (2*FW, 2*FH, VALSTR(0), APSIZE);
     lcd_puts_P  (1*FW, 4*FH, PSTR("speed | height") );
-    //lcd_putsAtt (2*FW, 5*FH, VALSTR(1), APSIZE);
-}
-
-void menuProc_eleres4(uint8_t event)
-{
-    switch(event)
-    {
-    case EVT_KEY_FIRST(KEY_UP):
-        chainMenu(menuProc_eleres3);
-        break;
-    case EVT_KEY_FIRST(KEY_DOWN):
-        chainMenu(menuProc_eleres5);
-        break;
-    case EVT_KEY_FIRST(KEY_EXIT):
-        ELERES_DisableRXD();
-        chainMenu(menuProc0);
-    break;
-    }
-    //initval (0, PACK_POS, CRS);
-    //initval (1, PACK_POS, BER);
-    title ('4');
-    lcd_puts_P  (1*FW, 1*FH, PSTR(" Course"));
-    //lcd_putsAtt (2*FW, 2*FH, VALSTR(0), APSIZE);
-    lcd_puts_P  (1*FW, 4*FH, PSTR(" Bearing"));
-    //lcd_putsAtt (2*FW, 5*FH, VALSTR(1), APSIZE);
-}
-
-void menuProc_eleres5(uint8_t event)
-{
-    switch(event)
-    {
-    case EVT_KEY_FIRST(KEY_UP):
-        chainMenu(menuProc_eleres4);
-        break;
-    case EVT_KEY_FIRST(KEY_DOWN):
-        chainMenu(menuProc_eleres6);
-        break;
-    case EVT_KEY_FIRST(KEY_MENU):
-        break;
-    case EVT_KEY_FIRST(KEY_EXIT):
-        ELERES_DisableRXD();
-        chainMenu(menuProc0);
-    break;
-    }
-    //initval (0, PACK_POS, WPN);
-    //initval (1, PACK_POS, DST);
-    title ('5');
-    lcd_puts_P  (1*FW, 1*FH, PSTR(" Way Point # "));
-    //lcd_putsAtt (2*FW, 2*FH, VALSTR(0), APSIZE);
-    lcd_puts_P  (1*FW, 4*FH, PSTR(" Distance "));
-    //lcd_putsAtt (2*FW, 5*FH, VALSTR(1), APSIZE);
-}
-
-void menuProc_eleres6(uint8_t event)
-{
-    switch(event)
-    {
-    case EVT_KEY_FIRST(KEY_UP):
-        chainMenu(menuProc_eleres5);
-        break;
-    case EVT_KEY_FIRST(KEY_DOWN):
-        chainMenu(menuProc_eleres7);
-        break;
-    case EVT_KEY_FIRST(KEY_MENU):
-        break;
-    case EVT_KEY_FIRST(KEY_EXIT):
-        ELERES_DisableRXD();
-        chainMenu(menuProc0);
-        break;
-    }
-    //initval (0, PACK_POS, ASP);
-    //initval (1, PACK_POS, THH);
-    title ('6');
-    lcd_puts_P  (1*FW, 1*FH, PSTR(" Air Speed "));
-    //lcd_putsAtt (2*FW, 2*FH, VALSTR(0), APSIZE);
-    lcd_puts_P  (1*FW, 4*FH, PSTR(" Climb Rate "));
-    //lcd_putsAtt (2*FW, 5*FH, VALSTR(1), APSIZE);
-}
-
-void menuProc_eleres7(uint8_t event)
-{
-    switch(event)
-    {
-    case EVT_KEY_FIRST(KEY_UP):
-        chainMenu(menuProc_eleres6);
-        break;
-    case EVT_KEY_FIRST(KEY_DOWN):
-        chainMenu(menuProc_eleres8);
-        break;
-    case EVT_KEY_FIRST(KEY_MENU):
-        break;
-    case EVT_KEY_FIRST(KEY_EXIT):
-        ELERES_DisableRXD();
-        chainMenu(menuProc0);
-    break;
-    }
-    //initval (0, PACK_POS, RLL);
-    //initval (1, PACK_POS, PCH);
-    title ('7');
-    lcd_puts_P  (1*FW, 1*FH, PSTR(" Roll Angle"));
-    //lcd_putsAtt (2*FW, 2*FH, VALSTR(0), APSIZE);
-    lcd_puts_P  (1*FW, 4*FH, PSTR(" Pitch Angle"));
-    //lcd_putsAtt (2*FW, 5*FH, VALSTR(1), APSIZE);
-}
-
-void menuProc_eleres8(uint8_t event)
-{
-    switch(event)
-    {
-    case EVT_KEY_FIRST(KEY_UP):
-        chainMenu(menuProc_eleres7);
-        break;
-    case EVT_KEY_FIRST(KEY_DOWN):
-        chainMenu(menuProc_eleres1);
-        break;
-    case EVT_KEY_FIRST(KEY_MENU):
-        break;
-    case EVT_KEY_FIRST(KEY_EXIT):
-        ELERES_DisableRXD();
-        chainMenu(menuProc0);
-        break;
-    }
-    //initval (0, PACK_POS, RLL);
-    //initval (1, PACK_POS, PCH);
-    title ('8');
-    lcd_puts_P  (1*FW, 1*FH, PSTR(" eLeReS Mode"));
-    //lcd_putsAtt (2*FW, 2*FH, VALSTR(0), APSIZE);
-    lcd_puts_P  (1*FW, 4*FH, PSTR(" RTL Distance"));
     //lcd_putsAtt (2*FW, 5*FH, VALSTR(1), APSIZE);
 }
 
