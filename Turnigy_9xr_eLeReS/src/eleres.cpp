@@ -31,6 +31,7 @@ const
 uint8_t Rxbuff[RX_BUFF_SIZE];
 uint8_t Rx_count;
 uint16_t stat_frame;
+volatile bool date_is_recived;
 
 typedef enum{
 	no_date,
@@ -129,7 +130,7 @@ void Check_Date (void){
 	//CH=8080007F0000000080808080
 	//UTX=11.7V STX=100 TTX=28\0xb0C
 	//Deb= 00000  00000  00000  00000
-
+	date_is_recived = false;
 	char *ptr = (char*)&Rxbuff;
 
 	//RSSI=100 RCQ=100 U=01.5V T=13\0xb0C P=51007 F=01 I=00.0A
@@ -205,7 +206,7 @@ ISR (USART0_RX_vect){
     Rxbuff[Rx_count] = UDR0;
 
     if(Rxbuff[Rx_count] == 0x0A && Rxbuff[Rx_count-1] == 0x0D){
-    	Check_Date();
+    	date_is_recived = true;
     	Rx_count = 0;
     }else if(++Rx_count >= RX_BUFF_SIZE){
     	Rx_count = 0;

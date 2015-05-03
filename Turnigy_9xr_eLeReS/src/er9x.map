@@ -184,7 +184,7 @@ END GROUP
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000     0xe5bc
+.text           0x00000000     0xe5b4
  *(.vectors)
  .vectors       0x00000000       0x8c /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/crtm64.o
                 0x00000000                __vectors
@@ -301,590 +301,590 @@ END GROUP
                 0x000020d6                __vector_8
                 0x000020d6                __vector_14
                 0x000020d6                __vector_20
- .text          0x000020da     0x1d56 obj/er9x.o
-                0x000020da                _Z12modeFixValueh
-                0x000020f4                _Z11get_tmr10msv
-                0x00002102                _Z8CS_STATEh
-                0x0000210e                _Z10mixaddressh
-                0x0000211c                _Z12limitaddressh
-                0x0000212a                _Z10putsChnRawhhhh
-                0x00002186                _Z7putsChnhhhh
-                0x00002192                _Z14putsDrSwitcheshhah
-                0x000021f6                _Z20putsMomentDrSwitcheshhah
-                0x0000222a                _Z11putsTmrModehhhh
-                0x000022ca                _Z8getValueh
-                0x00002348                _Z13alertMessagesPKcS0_
-                0x00002388                _Z21checkThrottlePositionihi
-                0x000023b8                _Z13putWarnSwitchhh
-                0x000023cc                _Z22getCurrentSwitchStatesv
-                0x000023ec                _Z15putsDblSizeNameh
-                0x00002418                _Z6almessPKch
-                0x0000245c                _Z7messagePKc
-                0x00002460                _Z15getRawTrimValuehh
-                0x0000249c                _Z18getTrimFlightPhasehh
-                0x000024e0                _Z12getTrimValuehh
-                0x000024ec                _Z20validatePlusMinus125i
-                0x0000250a                _Z12setTrimValuehhi
-                0x0000256e                _Z13checkIncDec16iiih
-                0x000026f8                _Z11checkIncDecaaah
-                0x0000270c                _Z14checkIncDec_hmaaa
-                0x00002710                _Z15checkIncDec_hm0aa
-                0x00002718                _Z16checkIncDec_hmu0ih
-                0x00002724                _Z14checkIncDec_hgaaa
-                0x00002728                _Z15checkIncDec_hg0aa
-                0x00002730                _Z11lastPopMenuv
-                0x00002744                _Z9chainMenuPFvhE
-                0x0000275e                _Z12backlightKeyv
-                0x00002786                _Z17putVoiceQueueLongj
-                0x000027b2                _Z18putVoiceQueueUpperh
-                0x000027ba                _Z13putVoiceQueueh
-                0x000027be                _Z9setVolumeh
-                0x000027c8                _ZN7t_voice13voice_processEv
-                0x000028d2                _Z10pollRotaryv
-                0x00002922                _Z15calcStickScrollh
-                0x00002970                _Z5anaInh
-                0x000029b8                _Z14stickMoveValuev
-                0x000029ea                _Z6tanaInh
-                0x000029fc                _Z11getADC_osmpv
-                0x00002a2c                __vector_16
-                0x00002a50                __vector_10
-                0x00002b0e                __vector_15
-                0x00002b9c                __vector_25
-                0x00002c8e                _Z7isAgvarh
-                0x00002c9c                _Z18doVoiceAlarmSourceP12t_voiceAlarm
-                0x00002cbc                _Z14calc1000toRESXi
-                0x00002ce8                _Z3REGaaa
-                0x00002d14                _Z10REG100_100a
-                0x00002d1a                _Z16IS_EXPO_THROTTLEh
-                0x00002d2e                _Z13calc100toRESXa
-                0x00002d58                _Z9getSwitchabh
-                0x00002f3a                _Z21check_backlight_voicev
-                0x00002f78                _Z8checkTHRv
-                0x00003004                _Z13checkSwitchesv
-                0x000030bc                _Z6alertxPKcb
-                0x00003126                _Z5alertPKc
-                0x0000312a                _Z7popMenub
-                0x00003156                _Z8pushMenuPFvhE
-                0x00003180                _Z16doBackLightVoiceh
-                0x000031bc                _Z7perMainv
-                0x00003742                _Z14getFlightPhasev
-                0x00003778                _Z17procOneVoiceAlarmP12t_voiceAlarmh
-                0x000039ec                _Z18processVoiceAlarmsv
-                0x00003a0e                _Z12mainSequencev
- .text          0x00003e30        0x0 obj/stamp.o
- .text          0x00003e30      0x67e obj/pers.o
-                0x00003e52                _Z8setNamePPcPKc
-                0x00003e6c                _Z10evalChkSumv
-                0x00003e86                _Z16eeGeneralDefaultv
-                0x00003ee2                _Z17modelDefaultWriteh
-                0x00003f54                _Z15eeLoadModelNamehPch
-                0x00003fb6                _Z13eeModelExistsh
-                0x00003fba                _Z16eeDuplicateModelh
-                0x00004058                _Z14eeWriteGeneralv
-                0x0000409c                _Z7eeDirtyh
-                0x000040d0                _Z13eeReadGeneralv
-                0x00004144                _Z7eeCheckb
-                0x00004298                _Z14eeWaitCompletev
-                0x000042b6                _Z11eeLoadModelh
- .text          0x000044ae      0x71e obj/file.o
-                0x00004566                _Z11EeFsGetFreev
-                0x00004584                _Z6EeFsckv
-                0x00004644                _Z10EeFsFormatv
-                0x00004688                _Z8EeFsOpenv
-                0x000046bc                _ZN5EFile6existsEh
-                0x000046d8                _ZN5EFile4swapEhh
-                0x0000471a                _ZN5EFile2rmEh
-                0x0000474c                _ZN5EFile4sizeEv
-                0x00004768                _ZN5EFile6openRdEh
-                0x000047a2                _ZN5EFile4readEPhj
-                0x0000486e                _ZN5EFile7readRlcEPhj
-                0x00004934                _ZN5EFile5writeEPhh
-                0x00004a26                _ZN5EFile6createEhhj
-                0x00004a72                _ZN5EFile10closeTruncEv
-                0x00004ac6                _ZN5EFile8writeRlcEhhPhjh
- .text          0x00004bcc      0x914 obj/lcd.o
-                0x00004bcc                _Z9lcd_clearv
-                0x00004be2                _Z7lcd_imghhPKhh
-                0x00004c62                _Z11lcd_putcAtthhch
-                0x00004d84                _Z8lcd_putchhc
-                0x00004d88                _Z12lcd_putsnAtthhPKchh
-                0x00004dd0                _Z14lcd_putsAttIdxhhPKchh
-                0x00004dea                _Z11lcd_putsn_PhhPKch
-                0x00004df4                _Z11lcd_putsAtthhPKch
-                0x00004e3e                _Z14lcd_puts_PlefthPKc
-                0x00004e48                _Z14lcd_puts_PskiphPKch
-                0x00004e6a                _Z10lcd_puts_PhhPKc
-                0x00004e6e                _Z11lcd_outhex4hhj
-                0x00004eb6                _Z16lcd_char_inversehhhh
-                0x00004eec                _Z14lcd_write_bitsPhh
-                0x00004f0e                _Z8lcd_plothh
-                0x00004f30                _Z13lcd_hlineStiphhah
-                0x00004fa6                _Z9lcd_hlinehha
-                0x00004faa                _Z9lcd_vlinehha
-                0x0000502e                _Z14lcd_outdezNAtthhlha
-                0x00005242                _Z13lcd_outdezAtthhih
-                0x0000525e                _Z9putsVoltshhhh
-                0x00005286                _Z8putsVBathhh
-                0x0000528e                _Z10lcd_outdezhhi
-                0x00005292                _Z12lcd_2_digitshhhh
-                0x000052ae                _Z8putsTimehhihh
-                0x00005330                _Z8lcd_recthhhh
-                0x0000538a                _Z8lcd_hbarhhhhh
-                0x000053e6                _Z10lcdSendCtlh
-                0x000053f8                _Z13lcdSetRefVolth
-                0x00005412                _Z14lcdSetContrastv
-                0x00005418                _Z8lcd_initv
-                0x0000545a                _Z13refreshDiplayv
- .text          0x000054e0      0x2ee obj/drivers.o
-                0x000054e0                _Z15eeWriteBlockCmpPKvjj
-                0x00005550                _Z8getEventv
-                0x0000555a                _ZN3Key5inputEb8EnumKeys
-                0x00005628                _Z8keyState8EnumKeys
-                0x000056a6                _Z11pauseEventsh
-                0x000056c6                _Z10killEventsh
-                0x000056e4                _Z7per10msv
- .text          0x000057ce      0x412 obj/templates.o
-                0x0000585a                _Z10clearMixesv
-                0x00005870                _Z11clearCurvesv
-                0x0000588e                _Z9setSwitchhhaa
-                0x000058aa                _Z6setMixhh
-                0x000058b8                _Z13applyTemplateh
- .text          0x00005be0      0x950 obj/pulses.o
-                0x00005be0                _Z12setPpmTimersv
-                0x00005bf6                _Z14setupPulsesPPMh
-                0x00005cea                _Z15setupPulsesDsm2h
-                0x00005e12                __vector_11
-                0x00005e6c                __vector_13
-                0x00005ef0                _Z18set_timer3_capturev
-                0x00005f14                _Z14set_timer3_ppmv
-                0x00005f36                __vector_26
-                0x00005fc4                _Z10putPcmParth
-                0x00005ff0                _Z9putPcmBith
-                0x00006014                _Z10putPcmByteh
-                0x00006058                _Z10putPcmHeadv
-                0x0000606e                _Z11scaleForPXXh
-                0x000060bc                _Z11setupPulsesv
-                0x0000633a                __vector_12
-                0x00006418                _Z11startPulsesv
-                0x00006440                __vector_24
-                0x000064c0                __vector_27
- .text          0x00006530      0x4fc obj/audio.o
-                0x00006530                _ZN10audioQueue6aqinitEv
-                0x0000654a                _ZN10audioQueueC1Ev
-                0x0000654a                _ZN10audioQueueC2Ev
-                0x0000654c                _ZN10audioQueue4busyEv
-                0x0000655c                _ZN10audioQueue9freeslotsEv
-                0x00006574                _ZN10audioQueue9heartbeatEv
-                0x00006614                _ZN10audioQueue4playEhhhh
-                0x000066dc                _ZN10audioQueue5eventEhh
-                0x000068e8                _Z13audioDefeventh
-                0x000068f2                _Z10audioEventhj
-                0x000068fc                _Z18audioVoiceDefeventhh
-                0x0000690c                _Z13voice_numericihh
- .text          0x00006a2c     0x71a0 obj/menus.o
-                0x00006a5c                _Z15menuMixersLimith
-                0x00006a7c                _Z13menuRangeBindh
-                0x00006cc0                _Z20putsAttIdxTelemItemshhhh
-                0x00006cea                _Z7m_to_fti
-                0x00006d12                _Z6c_to_fi
-                0x00006d2e                _Z11calc_scalerhPhS_
-                0x00006e22                _Z14telemItemValidh
-                0x00006e26                _Z20convertTelemConstantha
-                0x00006e52                _Z19get_telemetry_valueh
-                0x00006ea2                _Z16voice_telem_itemh
-                0x00006f56                _Z12displayTimerhhhh
-                0x00006f7c                _Z20putsTelemetryChannelhhaihh
-                0x000070f6                _Z8dispGvarhhhh
-                0x00007126                _Z12gvarMenuItemhhaaah
-                0x000071b2                _Z12get_dr_stateh
-                0x000071ee                _Z9DO_SQUAREhhh
-                0x00007242                _Z7qRotaryv
-                0x0000725a                _Z6TITLEPPKc
-                0x00007266                _Z17menuProcStatistich
-                0x0000739a                _Z14menu_lcd_onoffhhhh
-                0x0000741a                _Z16menu_lcd_HYPHINVhhhh
-                0x00007436                _Z18lcd_xlabel_decimalhPKcjhh
-                0x0000745a                _Z6MAXCOLhPKhh
-                0x00007474                _ZN7MState25checkEhPKhhh
-                0x0000780e                _ZN7MState213check_columnsEhh
-                0x00007822                _Z15menuProcGlobalsh
-                0x000079d0                _Z8telltalehaa
-                0x00007a1a                _Z19doMainScreenGrphicsv
-                0x00007aa4                _Z17hyphinvMenuItem_mhhh
-                0x00007ad0                _Z11displayNextv
-                0x00007adc                _Z16menuProcVoiceOneh
-                0x00007e70                _Z9put_curvehhah
-                0x00007eac                _Z13scalerDecimalhhh
-                0x00007ee6                _Z9deleteMixh
-                0x00007f2c                _Z14edit_dr_switchhhahh
-                0x00007f5c                _Z12putsChnOpRawhhP9t_MixDatah
-                0x00007fb6                _Z7moveMixhh
-                0x0000804c                _Z20reachMixerCountLimitv
-                0x00008060                _Z13yesNoMenuExitPKc
-                0x00008072                _Z13menuDeleteMixh
-                0x000080b8                _Z18menuDeleteDupModelh
-                0x00008176                _Z7doPopupPKchh
-                0x000082be                _Z19menuProcModelSelecth
-                0x00008556                _Z5expoujj
-                0x000085d0                _Z4expoii
-                0x0000862a                _Z12editExpoValshhhhhh
-                0x000086ba                _Z8char2idxc
-                0x000086da                _Z8idx2charh
-                0x000086ee                _Z8editNamehhPhhh
-                0x000087a0                _Z12putsTrimModehhhhh
-                0x000087fa                _Z12menuPhaseOneh
-                0x000089b8                _Z18dispFlightModenamehhh
-                0x000089e0                _Z15menuModelPhasesh
-                0x00008ac0                _Z8putc_0_1hhh
-                0x00008ace                _Z13menuProcIndexh
-                0x0000975e                _Z11resetTimernh
-                0x000097ae                _Z11resetTimer1v
-                0x000097ba                _Z11resetTimer2v
-                0x000097be                _Z5timerv
-                0x00009b88                _Z5tracev
-                0x00009bcc                _Z13switchDisplayhh
-                0x00009c24                _Z7isqrt32m
-                0x00009c76                _Z6intpolih
-                0x00009d16                _Z8calcExpohi
-                0x00009dfe                _Z12drawFunctionhh
-                0x00009eba                _Z9drawCurveh
-                0x00009f70                _Z16menuProcCurveOneh
-                0x0000a12a                _Z6perOutPih
-                0x0000b238                _Z14setStickCenterv
-                0x0000b352                _Z9menuProc0h
-                0x0000b848                _Z11perOutPhasePih
-                0x0000ba12                _Z10evalOffsetah
-                0x0000ba42                _Z13menuProcCurveh
-                0x0000bb06                _Z12menuScaleOneh
-                0x0000bd0c                _Z17menuProcTemplatesh
-                0x0000be12                _Z14menuProcMixOneh
-                0x0000c220                _Z11menuProcMixh
-                0x0000c604                _Z18menuProcVoiceAlarmh
-                0x0000c722                _Z18menuProcModelIndexh
- .text          0x0000dbcc      0x538 obj/eleres.o
-                0x0000dbcc                _Z12Check_ELERESv
-                0x0000dc0e                _Z7Find_IDPKc
-                0x0000dc36                _Z10Check_Datev
-                0x0000de1e                __vector_18
-                0x0000de9c                _Z11ELERES_Initv
-                0x0000ded6                _Z17ELERES_DisableRXDv
-                0x0000dedc                _Z16ELERES_EnableRXDv
-                0x0000df10                _Z5titlec
-                0x0000df4c                _Z16menuProc_eleres1h
-                0x0000dfdc                _Z14menuProceLeReSh
-                0x0000dfde                _Z16menuProc_eleres2h
-                0x0000e076                _Z16menuProc_eleres3h
- .text          0x0000e104        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_mulsi3.o)
- .text          0x0000e104        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_divmodqi4.o)
- .text          0x0000e104        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodhi4.o)
- .text          0x0000e104        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_divmodhi4.o)
- .text          0x0000e104        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodsi4.o)
- .text          0x0000e104        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_divmodsi4.o)
- .text          0x0000e104        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_negsi2.o)
- .text          0x0000e104        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_exit.o)
- .text          0x0000e104        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_tablejump.o)
- .text          0x0000e104        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_copy_data.o)
- .text          0x0000e104        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_clear_bss.o)
- .text          0x0000e104        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_ctors.o)
- .text          0x0000e104        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_mulhisi3.o)
- .text          0x0000e104        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_umulhisi3.o)
- .text          0x0000e104        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_usmulhisi3.o)
- .text          0x0000e104        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_muluhisi3.o)
- .text          0x0000e104        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_mulshisi3.o)
- .text          0x0000e104        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodqi4.o)
- .text          0x0000e104        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(atoi.o)
- .text          0x0000e104        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(memmove.o)
- .text          0x0000e104        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(memset.o)
- .text          0x0000e104        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(strncmp.o)
- .text          0x0000e104        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(mul10.o)
- .text          0x0000e104        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(eerd_block_atmega64.o)
- .text          0x0000e104        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(memcpy.o)
-                0x0000e104                . = ALIGN (0x2)
+ .text          0x000020da     0x1d66 obj/er9x.o
+                0x00002102                _Z12modeFixValueh
+                0x0000211c                _Z11get_tmr10msv
+                0x0000212a                _Z8CS_STATEh
+                0x00002136                _Z10mixaddressh
+                0x00002144                _Z12limitaddressh
+                0x00002152                _Z10putsChnRawhhhh
+                0x000021ae                _Z7putsChnhhhh
+                0x000021ba                _Z14putsDrSwitcheshhah
+                0x0000221e                _Z20putsMomentDrSwitcheshhah
+                0x00002252                _Z11putsTmrModehhhh
+                0x000022f2                _Z8getValueh
+                0x00002370                _Z13alertMessagesPKcS0_
+                0x000023b0                _Z21checkThrottlePositionihi
+                0x000023e0                _Z13putWarnSwitchhh
+                0x000023f4                _Z22getCurrentSwitchStatesv
+                0x00002414                _Z15putsDblSizeNameh
+                0x00002440                _Z6almessPKch
+                0x00002484                _Z7messagePKc
+                0x00002488                _Z15getRawTrimValuehh
+                0x000024c4                _Z18getTrimFlightPhasehh
+                0x00002508                _Z12getTrimValuehh
+                0x00002514                _Z20validatePlusMinus125i
+                0x00002532                _Z12setTrimValuehhi
+                0x00002596                _Z13checkIncDec16iiih
+                0x00002720                _Z11checkIncDecaaah
+                0x00002734                _Z14checkIncDec_hmaaa
+                0x00002738                _Z15checkIncDec_hm0aa
+                0x00002740                _Z16checkIncDec_hmu0ih
+                0x0000274c                _Z14checkIncDec_hgaaa
+                0x00002750                _Z15checkIncDec_hg0aa
+                0x00002758                _Z11lastPopMenuv
+                0x0000276c                _Z9chainMenuPFvhE
+                0x00002786                _Z12backlightKeyv
+                0x000027ae                _Z17putVoiceQueueLongj
+                0x000027da                _Z18putVoiceQueueUpperh
+                0x000027e2                _Z13putVoiceQueueh
+                0x000027e6                _Z9setVolumeh
+                0x000027f0                _ZN7t_voice13voice_processEv
+                0x000028fa                _Z10pollRotaryv
+                0x0000294a                _Z15calcStickScrollh
+                0x00002998                _Z5anaInh
+                0x000029e0                _Z14stickMoveValuev
+                0x00002a12                _Z6tanaInh
+                0x00002a24                _Z11getADC_osmpv
+                0x00002a54                __vector_16
+                0x00002a78                __vector_10
+                0x00002b36                __vector_15
+                0x00002bc4                __vector_25
+                0x00002cb6                _Z7isAgvarh
+                0x00002cc4                _Z18doVoiceAlarmSourceP12t_voiceAlarm
+                0x00002ce4                _Z14calc1000toRESXi
+                0x00002d10                _Z3REGaaa
+                0x00002d3c                _Z10REG100_100a
+                0x00002d42                _Z16IS_EXPO_THROTTLEh
+                0x00002d56                _Z13calc100toRESXa
+                0x00002d80                _Z9getSwitchabh
+                0x00002f62                _Z21check_backlight_voicev
+                0x00002fa0                _Z8checkTHRv
+                0x0000302c                _Z13checkSwitchesv
+                0x000030e4                _Z6alertxPKcb
+                0x0000314e                _Z5alertPKc
+                0x00003152                _Z7popMenub
+                0x0000317e                _Z8pushMenuPFvhE
+                0x000031a8                _Z16doBackLightVoiceh
+                0x000031e4                _Z7perMainv
+                0x0000376a                _Z14getFlightPhasev
+                0x000037a0                _Z17procOneVoiceAlarmP12t_voiceAlarmh
+                0x00003a14                _Z18processVoiceAlarmsv
+                0x00003a36                _Z12mainSequencev
+ .text          0x00003e40        0x0 obj/stamp.o
+ .text          0x00003e40      0x67e obj/pers.o
+                0x00003e62                _Z8setNamePPcPKc
+                0x00003e7c                _Z10evalChkSumv
+                0x00003e96                _Z16eeGeneralDefaultv
+                0x00003ef2                _Z17modelDefaultWriteh
+                0x00003f64                _Z15eeLoadModelNamehPch
+                0x00003fc6                _Z13eeModelExistsh
+                0x00003fca                _Z16eeDuplicateModelh
+                0x00004068                _Z14eeWriteGeneralv
+                0x000040ac                _Z7eeDirtyh
+                0x000040e0                _Z13eeReadGeneralv
+                0x00004154                _Z7eeCheckb
+                0x000042a8                _Z14eeWaitCompletev
+                0x000042c6                _Z11eeLoadModelh
+ .text          0x000044be      0x71e obj/file.o
+                0x00004576                _Z11EeFsGetFreev
+                0x00004594                _Z6EeFsckv
+                0x00004654                _Z10EeFsFormatv
+                0x00004698                _Z8EeFsOpenv
+                0x000046cc                _ZN5EFile6existsEh
+                0x000046e8                _ZN5EFile4swapEhh
+                0x0000472a                _ZN5EFile2rmEh
+                0x0000475c                _ZN5EFile4sizeEv
+                0x00004778                _ZN5EFile6openRdEh
+                0x000047b2                _ZN5EFile4readEPhj
+                0x0000487e                _ZN5EFile7readRlcEPhj
+                0x00004944                _ZN5EFile5writeEPhh
+                0x00004a36                _ZN5EFile6createEhhj
+                0x00004a82                _ZN5EFile10closeTruncEv
+                0x00004ad6                _ZN5EFile8writeRlcEhhPhjh
+ .text          0x00004bdc      0x914 obj/lcd.o
+                0x00004bdc                _Z9lcd_clearv
+                0x00004bf2                _Z7lcd_imghhPKhh
+                0x00004c72                _Z11lcd_putcAtthhch
+                0x00004d94                _Z8lcd_putchhc
+                0x00004d98                _Z12lcd_putsnAtthhPKchh
+                0x00004de0                _Z14lcd_putsAttIdxhhPKchh
+                0x00004dfa                _Z11lcd_putsn_PhhPKch
+                0x00004e04                _Z11lcd_putsAtthhPKch
+                0x00004e4e                _Z14lcd_puts_PlefthPKc
+                0x00004e58                _Z14lcd_puts_PskiphPKch
+                0x00004e7a                _Z10lcd_puts_PhhPKc
+                0x00004e7e                _Z11lcd_outhex4hhj
+                0x00004ec6                _Z16lcd_char_inversehhhh
+                0x00004efc                _Z14lcd_write_bitsPhh
+                0x00004f1e                _Z8lcd_plothh
+                0x00004f40                _Z13lcd_hlineStiphhah
+                0x00004fb6                _Z9lcd_hlinehha
+                0x00004fba                _Z9lcd_vlinehha
+                0x0000503e                _Z14lcd_outdezNAtthhlha
+                0x00005252                _Z13lcd_outdezAtthhih
+                0x0000526e                _Z9putsVoltshhhh
+                0x00005296                _Z8putsVBathhh
+                0x0000529e                _Z10lcd_outdezhhi
+                0x000052a2                _Z12lcd_2_digitshhhh
+                0x000052be                _Z8putsTimehhihh
+                0x00005340                _Z8lcd_recthhhh
+                0x0000539a                _Z8lcd_hbarhhhhh
+                0x000053f6                _Z10lcdSendCtlh
+                0x00005408                _Z13lcdSetRefVolth
+                0x00005422                _Z14lcdSetContrastv
+                0x00005428                _Z8lcd_initv
+                0x0000546a                _Z13refreshDiplayv
+ .text          0x000054f0      0x2ee obj/drivers.o
+                0x000054f0                _Z15eeWriteBlockCmpPKvjj
+                0x00005560                _Z8getEventv
+                0x0000556a                _ZN3Key5inputEb8EnumKeys
+                0x00005638                _Z8keyState8EnumKeys
+                0x000056b6                _Z11pauseEventsh
+                0x000056d6                _Z10killEventsh
+                0x000056f4                _Z7per10msv
+ .text          0x000057de      0x412 obj/templates.o
+                0x0000586a                _Z10clearMixesv
+                0x00005880                _Z11clearCurvesv
+                0x0000589e                _Z9setSwitchhhaa
+                0x000058ba                _Z6setMixhh
+                0x000058c8                _Z13applyTemplateh
+ .text          0x00005bf0      0x950 obj/pulses.o
+                0x00005bf0                _Z12setPpmTimersv
+                0x00005c06                _Z14setupPulsesPPMh
+                0x00005cfa                _Z15setupPulsesDsm2h
+                0x00005e22                __vector_11
+                0x00005e7c                __vector_13
+                0x00005f00                _Z18set_timer3_capturev
+                0x00005f24                _Z14set_timer3_ppmv
+                0x00005f46                __vector_26
+                0x00005fd4                _Z10putPcmParth
+                0x00006000                _Z9putPcmBith
+                0x00006024                _Z10putPcmByteh
+                0x00006068                _Z10putPcmHeadv
+                0x0000607e                _Z11scaleForPXXh
+                0x000060cc                _Z11setupPulsesv
+                0x0000634a                __vector_12
+                0x00006428                _Z11startPulsesv
+                0x00006450                __vector_24
+                0x000064d0                __vector_27
+ .text          0x00006540      0x4fc obj/audio.o
+                0x00006540                _ZN10audioQueue6aqinitEv
+                0x0000655a                _ZN10audioQueueC1Ev
+                0x0000655a                _ZN10audioQueueC2Ev
+                0x0000655c                _ZN10audioQueue4busyEv
+                0x0000656c                _ZN10audioQueue9freeslotsEv
+                0x00006584                _ZN10audioQueue9heartbeatEv
+                0x00006624                _ZN10audioQueue4playEhhhh
+                0x000066ec                _ZN10audioQueue5eventEhh
+                0x000068f8                _Z13audioDefeventh
+                0x00006902                _Z10audioEventhj
+                0x0000690c                _Z18audioVoiceDefeventhh
+                0x0000691c                _Z13voice_numericihh
+ .text          0x00006a3c     0x71a0 obj/menus.o
+                0x00006a6c                _Z15menuMixersLimith
+                0x00006a8c                _Z13menuRangeBindh
+                0x00006cd0                _Z20putsAttIdxTelemItemshhhh
+                0x00006cfa                _Z7m_to_fti
+                0x00006d22                _Z6c_to_fi
+                0x00006d3e                _Z11calc_scalerhPhS_
+                0x00006e32                _Z14telemItemValidh
+                0x00006e36                _Z20convertTelemConstantha
+                0x00006e62                _Z19get_telemetry_valueh
+                0x00006eb2                _Z16voice_telem_itemh
+                0x00006f66                _Z12displayTimerhhhh
+                0x00006f8c                _Z20putsTelemetryChannelhhaihh
+                0x00007106                _Z8dispGvarhhhh
+                0x00007136                _Z12gvarMenuItemhhaaah
+                0x000071c2                _Z12get_dr_stateh
+                0x000071fe                _Z9DO_SQUAREhhh
+                0x00007252                _Z7qRotaryv
+                0x0000726a                _Z6TITLEPPKc
+                0x00007276                _Z17menuProcStatistich
+                0x000073aa                _Z14menu_lcd_onoffhhhh
+                0x0000742a                _Z16menu_lcd_HYPHINVhhhh
+                0x00007446                _Z18lcd_xlabel_decimalhPKcjhh
+                0x0000746a                _Z6MAXCOLhPKhh
+                0x00007484                _ZN7MState25checkEhPKhhh
+                0x0000781e                _ZN7MState213check_columnsEhh
+                0x00007832                _Z15menuProcGlobalsh
+                0x000079e0                _Z8telltalehaa
+                0x00007a2a                _Z19doMainScreenGrphicsv
+                0x00007ab4                _Z17hyphinvMenuItem_mhhh
+                0x00007ae0                _Z11displayNextv
+                0x00007aec                _Z16menuProcVoiceOneh
+                0x00007e80                _Z9put_curvehhah
+                0x00007ebc                _Z13scalerDecimalhhh
+                0x00007ef6                _Z9deleteMixh
+                0x00007f3c                _Z14edit_dr_switchhhahh
+                0x00007f6c                _Z12putsChnOpRawhhP9t_MixDatah
+                0x00007fc6                _Z7moveMixhh
+                0x0000805c                _Z20reachMixerCountLimitv
+                0x00008070                _Z13yesNoMenuExitPKc
+                0x00008082                _Z13menuDeleteMixh
+                0x000080c8                _Z18menuDeleteDupModelh
+                0x00008186                _Z7doPopupPKchh
+                0x000082ce                _Z19menuProcModelSelecth
+                0x00008566                _Z5expoujj
+                0x000085e0                _Z4expoii
+                0x0000863a                _Z12editExpoValshhhhhh
+                0x000086ca                _Z8char2idxc
+                0x000086ea                _Z8idx2charh
+                0x000086fe                _Z8editNamehhPhhh
+                0x000087b0                _Z12putsTrimModehhhhh
+                0x0000880a                _Z12menuPhaseOneh
+                0x000089c8                _Z18dispFlightModenamehhh
+                0x000089f0                _Z15menuModelPhasesh
+                0x00008ad0                _Z8putc_0_1hhh
+                0x00008ade                _Z13menuProcIndexh
+                0x0000976e                _Z11resetTimernh
+                0x000097be                _Z11resetTimer1v
+                0x000097ca                _Z11resetTimer2v
+                0x000097ce                _Z5timerv
+                0x00009b98                _Z5tracev
+                0x00009bdc                _Z13switchDisplayhh
+                0x00009c34                _Z7isqrt32m
+                0x00009c86                _Z6intpolih
+                0x00009d26                _Z8calcExpohi
+                0x00009e0e                _Z12drawFunctionhh
+                0x00009eca                _Z9drawCurveh
+                0x00009f80                _Z16menuProcCurveOneh
+                0x0000a13a                _Z6perOutPih
+                0x0000b248                _Z14setStickCenterv
+                0x0000b362                _Z9menuProc0h
+                0x0000b858                _Z11perOutPhasePih
+                0x0000ba22                _Z10evalOffsetah
+                0x0000ba52                _Z13menuProcCurveh
+                0x0000bb16                _Z12menuScaleOneh
+                0x0000bd1c                _Z17menuProcTemplatesh
+                0x0000be22                _Z14menuProcMixOneh
+                0x0000c230                _Z11menuProcMixh
+                0x0000c614                _Z18menuProcVoiceAlarmh
+                0x0000c732                _Z18menuProcModelIndexh
+ .text          0x0000dbdc      0x520 obj/eleres.o
+                0x0000dbdc                _Z12Check_ELERESv
+                0x0000dc1e                _Z7Find_IDPKc
+                0x0000dc46                _Z10Check_Datev
+                0x0000de32                __vector_18
+                0x0000de94                _Z11ELERES_Initv
+                0x0000dece                _Z17ELERES_DisableRXDv
+                0x0000ded4                _Z16ELERES_EnableRXDv
+                0x0000df08                _Z5titlec
+                0x0000df44                _Z16menuProc_eleres1h
+                0x0000dfd4                _Z14menuProceLeReSh
+                0x0000dfd6                _Z16menuProc_eleres2h
+                0x0000e06e                _Z16menuProc_eleres3h
+ .text          0x0000e0fc        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_mulsi3.o)
+ .text          0x0000e0fc        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_divmodqi4.o)
+ .text          0x0000e0fc        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodhi4.o)
+ .text          0x0000e0fc        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_divmodhi4.o)
+ .text          0x0000e0fc        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodsi4.o)
+ .text          0x0000e0fc        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_divmodsi4.o)
+ .text          0x0000e0fc        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_negsi2.o)
+ .text          0x0000e0fc        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_exit.o)
+ .text          0x0000e0fc        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_tablejump.o)
+ .text          0x0000e0fc        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_copy_data.o)
+ .text          0x0000e0fc        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_clear_bss.o)
+ .text          0x0000e0fc        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_ctors.o)
+ .text          0x0000e0fc        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_mulhisi3.o)
+ .text          0x0000e0fc        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_umulhisi3.o)
+ .text          0x0000e0fc        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_usmulhisi3.o)
+ .text          0x0000e0fc        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_muluhisi3.o)
+ .text          0x0000e0fc        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_mulshisi3.o)
+ .text          0x0000e0fc        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodqi4.o)
+ .text          0x0000e0fc        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(atoi.o)
+ .text          0x0000e0fc        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(memmove.o)
+ .text          0x0000e0fc        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(memset.o)
+ .text          0x0000e0fc        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(strncmp.o)
+ .text          0x0000e0fc        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(mul10.o)
+ .text          0x0000e0fc        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(eerd_block_atmega64.o)
+ .text          0x0000e0fc        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(memcpy.o)
+                0x0000e0fc                . = ALIGN (0x2)
  *(.text.*)
  .text._Z7keyDownv
-                0x0000e104        0x8 obj/er9x.o
-                0x0000e104                _Z7keyDownv
- .text.startup  0x0000e10c      0x268 obj/er9x.o
-                0x0000e10c                main
+                0x0000e0fc        0x8 obj/er9x.o
+                0x0000e0fc                _Z7keyDownv
+ .text.startup  0x0000e104      0x268 obj/er9x.o
+                0x0000e104                main
  .text.libgcc.mul
-                0x0000e374       0x1e /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_mulsi3.o)
-                0x0000e374                __mulsi3
+                0x0000e36c       0x1e /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_mulsi3.o)
+                0x0000e36c                __mulsi3
  .text.libgcc.div
-                0x0000e392        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_mulsi3.o)
- .text.libgcc   0x0000e392        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_mulsi3.o)
+                0x0000e38a        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_mulsi3.o)
+ .text.libgcc   0x0000e38a        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_mulsi3.o)
  .text.libgcc.prologue
-                0x0000e392        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_mulsi3.o)
+                0x0000e38a        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_mulsi3.o)
  .text.libgcc.builtins
-                0x0000e392        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_mulsi3.o)
+                0x0000e38a        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_mulsi3.o)
  .text.libgcc.fmul
-                0x0000e392        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_mulsi3.o)
+                0x0000e38a        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_mulsi3.o)
  .text.libgcc.fixed
-                0x0000e392        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_mulsi3.o)
+                0x0000e38a        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_mulsi3.o)
  .text.libgcc.mul
-                0x0000e392        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_divmodqi4.o)
+                0x0000e38a        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_divmodqi4.o)
  .text.libgcc.div
-                0x0000e392       0x1a /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_divmodqi4.o)
-                0x0000e392                __divmodqi4
- .text.libgcc   0x0000e3ac        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_divmodqi4.o)
+                0x0000e38a       0x1a /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_divmodqi4.o)
+                0x0000e38a                __divmodqi4
+ .text.libgcc   0x0000e3a4        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_divmodqi4.o)
  .text.libgcc.prologue
-                0x0000e3ac        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_divmodqi4.o)
+                0x0000e3a4        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_divmodqi4.o)
  .text.libgcc.builtins
-                0x0000e3ac        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_divmodqi4.o)
+                0x0000e3a4        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_divmodqi4.o)
  .text.libgcc.fmul
-                0x0000e3ac        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_divmodqi4.o)
+                0x0000e3a4        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_divmodqi4.o)
  .text.libgcc.fixed
-                0x0000e3ac        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_divmodqi4.o)
+                0x0000e3a4        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_divmodqi4.o)
  .text.libgcc.mul
-                0x0000e3ac        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodhi4.o)
+                0x0000e3a4        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodhi4.o)
  .text.libgcc.div
-                0x0000e3ac       0x28 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodhi4.o)
-                0x0000e3ac                __udivmodhi4
- .text.libgcc   0x0000e3d4        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodhi4.o)
+                0x0000e3a4       0x28 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodhi4.o)
+                0x0000e3a4                __udivmodhi4
+ .text.libgcc   0x0000e3cc        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodhi4.o)
  .text.libgcc.prologue
-                0x0000e3d4        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodhi4.o)
+                0x0000e3cc        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodhi4.o)
  .text.libgcc.builtins
-                0x0000e3d4        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodhi4.o)
+                0x0000e3cc        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodhi4.o)
  .text.libgcc.fmul
-                0x0000e3d4        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodhi4.o)
+                0x0000e3cc        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodhi4.o)
  .text.libgcc.fixed
-                0x0000e3d4        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodhi4.o)
+                0x0000e3cc        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodhi4.o)
  .text.libgcc.mul
-                0x0000e3d4        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_divmodhi4.o)
+                0x0000e3cc        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_divmodhi4.o)
  .text.libgcc.div
-                0x0000e3d4       0x26 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_divmodhi4.o)
-                0x0000e3d4                __divmodhi4
-                0x0000e3d4                _div
- .text.libgcc   0x0000e3fa        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_divmodhi4.o)
+                0x0000e3cc       0x26 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_divmodhi4.o)
+                0x0000e3cc                __divmodhi4
+                0x0000e3cc                _div
+ .text.libgcc   0x0000e3f2        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_divmodhi4.o)
  .text.libgcc.prologue
-                0x0000e3fa        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_divmodhi4.o)
+                0x0000e3f2        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_divmodhi4.o)
  .text.libgcc.builtins
-                0x0000e3fa        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_divmodhi4.o)
+                0x0000e3f2        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_divmodhi4.o)
  .text.libgcc.fmul
-                0x0000e3fa        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_divmodhi4.o)
+                0x0000e3f2        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_divmodhi4.o)
  .text.libgcc.fixed
-                0x0000e3fa        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_divmodhi4.o)
+                0x0000e3f2        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_divmodhi4.o)
  .text.libgcc.mul
-                0x0000e3fa        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodsi4.o)
+                0x0000e3f2        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodsi4.o)
  .text.libgcc.div
-                0x0000e3fa       0x44 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodsi4.o)
-                0x0000e3fa                __udivmodsi4
- .text.libgcc   0x0000e43e        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodsi4.o)
+                0x0000e3f2       0x44 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodsi4.o)
+                0x0000e3f2                __udivmodsi4
+ .text.libgcc   0x0000e436        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodsi4.o)
  .text.libgcc.prologue
-                0x0000e43e        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodsi4.o)
+                0x0000e436        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodsi4.o)
  .text.libgcc.builtins
-                0x0000e43e        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodsi4.o)
+                0x0000e436        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodsi4.o)
  .text.libgcc.fmul
-                0x0000e43e        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodsi4.o)
+                0x0000e436        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodsi4.o)
  .text.libgcc.fixed
-                0x0000e43e        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodsi4.o)
+                0x0000e436        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodsi4.o)
  .text.libgcc.mul
-                0x0000e43e        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_divmodsi4.o)
+                0x0000e436        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_divmodsi4.o)
  .text.libgcc.div
-                0x0000e43e       0x28 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_divmodsi4.o)
-                0x0000e43e                __divmodsi4
- .text.libgcc   0x0000e466        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_divmodsi4.o)
+                0x0000e436       0x28 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_divmodsi4.o)
+                0x0000e436                __divmodsi4
+ .text.libgcc   0x0000e45e        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_divmodsi4.o)
  .text.libgcc.prologue
-                0x0000e466        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_divmodsi4.o)
+                0x0000e45e        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_divmodsi4.o)
  .text.libgcc.builtins
-                0x0000e466        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_divmodsi4.o)
+                0x0000e45e        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_divmodsi4.o)
  .text.libgcc.fmul
-                0x0000e466        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_divmodsi4.o)
+                0x0000e45e        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_divmodsi4.o)
  .text.libgcc.fixed
-                0x0000e466        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_divmodsi4.o)
+                0x0000e45e        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_divmodsi4.o)
  .text.libgcc.mul
-                0x0000e466        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_negsi2.o)
+                0x0000e45e        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_negsi2.o)
  .text.libgcc.div
-                0x0000e466       0x10 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_negsi2.o)
-                0x0000e466                __negsi2
- .text.libgcc   0x0000e476        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_negsi2.o)
+                0x0000e45e       0x10 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_negsi2.o)
+                0x0000e45e                __negsi2
+ .text.libgcc   0x0000e46e        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_negsi2.o)
  .text.libgcc.prologue
-                0x0000e476        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_negsi2.o)
+                0x0000e46e        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_negsi2.o)
  .text.libgcc.builtins
-                0x0000e476        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_negsi2.o)
+                0x0000e46e        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_negsi2.o)
  .text.libgcc.fmul
-                0x0000e476        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_negsi2.o)
+                0x0000e46e        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_negsi2.o)
  .text.libgcc.fixed
-                0x0000e476        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_negsi2.o)
+                0x0000e46e        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_negsi2.o)
  .text.libgcc.mul
-                0x0000e476        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_exit.o)
+                0x0000e46e        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_exit.o)
  .text.libgcc.div
-                0x0000e476        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_exit.o)
- .text.libgcc   0x0000e476        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_exit.o)
+                0x0000e46e        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_exit.o)
+ .text.libgcc   0x0000e46e        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_exit.o)
  .text.libgcc.prologue
-                0x0000e476        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_exit.o)
+                0x0000e46e        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_exit.o)
  .text.libgcc.builtins
-                0x0000e476        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_exit.o)
+                0x0000e46e        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_exit.o)
  .text.libgcc.fmul
-                0x0000e476        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_exit.o)
+                0x0000e46e        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_exit.o)
  .text.libgcc.fixed
-                0x0000e476        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_exit.o)
+                0x0000e46e        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_exit.o)
  .text.libgcc.mul
-                0x0000e476        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_tablejump.o)
+                0x0000e46e        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_tablejump.o)
  .text.libgcc.div
-                0x0000e476        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_tablejump.o)
- .text.libgcc   0x0000e476        0xc /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_tablejump.o)
-                0x0000e476                __tablejump2__
-                0x0000e47a                __tablejump__
+                0x0000e46e        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_tablejump.o)
+ .text.libgcc   0x0000e46e        0xc /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_tablejump.o)
+                0x0000e46e                __tablejump2__
+                0x0000e472                __tablejump__
  .text.libgcc.prologue
-                0x0000e482        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_tablejump.o)
+                0x0000e47a        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_tablejump.o)
  .text.libgcc.builtins
-                0x0000e482        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_tablejump.o)
+                0x0000e47a        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_tablejump.o)
  .text.libgcc.fmul
-                0x0000e482        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_tablejump.o)
+                0x0000e47a        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_tablejump.o)
  .text.libgcc.fixed
-                0x0000e482        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_tablejump.o)
+                0x0000e47a        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_tablejump.o)
  .text.libgcc.mul
-                0x0000e482        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_copy_data.o)
+                0x0000e47a        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_copy_data.o)
  .text.libgcc.div
-                0x0000e482        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_copy_data.o)
- .text.libgcc   0x0000e482        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_copy_data.o)
+                0x0000e47a        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc   0x0000e47a        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_copy_data.o)
  .text.libgcc.prologue
-                0x0000e482        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_copy_data.o)
+                0x0000e47a        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_copy_data.o)
  .text.libgcc.builtins
-                0x0000e482        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_copy_data.o)
+                0x0000e47a        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_copy_data.o)
  .text.libgcc.fmul
-                0x0000e482        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_copy_data.o)
+                0x0000e47a        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_copy_data.o)
  .text.libgcc.fixed
-                0x0000e482        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_copy_data.o)
+                0x0000e47a        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_copy_data.o)
  .text.libgcc.mul
-                0x0000e482        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_clear_bss.o)
+                0x0000e47a        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_clear_bss.o)
  .text.libgcc.div
-                0x0000e482        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_clear_bss.o)
- .text.libgcc   0x0000e482        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_clear_bss.o)
+                0x0000e47a        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc   0x0000e47a        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_clear_bss.o)
  .text.libgcc.prologue
-                0x0000e482        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_clear_bss.o)
+                0x0000e47a        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_clear_bss.o)
  .text.libgcc.builtins
-                0x0000e482        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_clear_bss.o)
+                0x0000e47a        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_clear_bss.o)
  .text.libgcc.fmul
-                0x0000e482        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_clear_bss.o)
+                0x0000e47a        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_clear_bss.o)
  .text.libgcc.fixed
-                0x0000e482        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_clear_bss.o)
+                0x0000e47a        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_clear_bss.o)
  .text.libgcc.mul
-                0x0000e482        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_ctors.o)
+                0x0000e47a        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_ctors.o)
  .text.libgcc.div
-                0x0000e482        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_ctors.o)
- .text.libgcc   0x0000e482        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_ctors.o)
+                0x0000e47a        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_ctors.o)
+ .text.libgcc   0x0000e47a        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_ctors.o)
  .text.libgcc.prologue
-                0x0000e482        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_ctors.o)
+                0x0000e47a        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_ctors.o)
  .text.libgcc.builtins
-                0x0000e482        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_ctors.o)
+                0x0000e47a        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_ctors.o)
  .text.libgcc.fmul
-                0x0000e482        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_ctors.o)
+                0x0000e47a        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_ctors.o)
  .text.libgcc.fixed
-                0x0000e482        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_ctors.o)
+                0x0000e47a        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_ctors.o)
  .text.libgcc.mul
-                0x0000e482        0xc /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_mulhisi3.o)
-                0x0000e482                __mulhisi3
+                0x0000e47a        0xc /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_mulhisi3.o)
+                0x0000e47a                __mulhisi3
  .text.libgcc.div
-                0x0000e48e        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_mulhisi3.o)
- .text.libgcc   0x0000e48e        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_mulhisi3.o)
+                0x0000e486        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_mulhisi3.o)
+ .text.libgcc   0x0000e486        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_mulhisi3.o)
  .text.libgcc.prologue
-                0x0000e48e        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_mulhisi3.o)
+                0x0000e486        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_mulhisi3.o)
  .text.libgcc.builtins
-                0x0000e48e        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_mulhisi3.o)
+                0x0000e486        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_mulhisi3.o)
  .text.libgcc.fmul
-                0x0000e48e        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_mulhisi3.o)
+                0x0000e486        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_mulhisi3.o)
  .text.libgcc.fixed
-                0x0000e48e        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_mulhisi3.o)
+                0x0000e486        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_mulhisi3.o)
  .text.libgcc.mul
-                0x0000e48e       0x1e /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_umulhisi3.o)
-                0x0000e48e                __umulhisi3
+                0x0000e486       0x1e /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_umulhisi3.o)
+                0x0000e486                __umulhisi3
  .text.libgcc.div
-                0x0000e4ac        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_umulhisi3.o)
- .text.libgcc   0x0000e4ac        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_umulhisi3.o)
+                0x0000e4a4        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_umulhisi3.o)
+ .text.libgcc   0x0000e4a4        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_umulhisi3.o)
  .text.libgcc.prologue
-                0x0000e4ac        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_umulhisi3.o)
+                0x0000e4a4        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_umulhisi3.o)
  .text.libgcc.builtins
-                0x0000e4ac        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_umulhisi3.o)
+                0x0000e4a4        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_umulhisi3.o)
  .text.libgcc.fmul
-                0x0000e4ac        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_umulhisi3.o)
+                0x0000e4a4        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_umulhisi3.o)
  .text.libgcc.fixed
-                0x0000e4ac        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_umulhisi3.o)
+                0x0000e4a4        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_umulhisi3.o)
  .text.libgcc.mul
-                0x0000e4ac        0xc /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_usmulhisi3.o)
-                0x0000e4ac                __usmulhisi3
-                0x0000e4ae                __usmulhisi3_tail
+                0x0000e4a4        0xc /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_usmulhisi3.o)
+                0x0000e4a4                __usmulhisi3
+                0x0000e4a6                __usmulhisi3_tail
  .text.libgcc.div
-                0x0000e4b8        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_usmulhisi3.o)
- .text.libgcc   0x0000e4b8        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_usmulhisi3.o)
+                0x0000e4b0        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_usmulhisi3.o)
+ .text.libgcc   0x0000e4b0        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_usmulhisi3.o)
  .text.libgcc.prologue
-                0x0000e4b8        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_usmulhisi3.o)
+                0x0000e4b0        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_usmulhisi3.o)
  .text.libgcc.builtins
-                0x0000e4b8        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_usmulhisi3.o)
+                0x0000e4b0        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_usmulhisi3.o)
  .text.libgcc.fmul
-                0x0000e4b8        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_usmulhisi3.o)
+                0x0000e4b0        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_usmulhisi3.o)
  .text.libgcc.fixed
-                0x0000e4b8        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_usmulhisi3.o)
+                0x0000e4b0        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_usmulhisi3.o)
  .text.libgcc.mul
-                0x0000e4b8       0x14 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_muluhisi3.o)
-                0x0000e4b8                __muluhisi3
+                0x0000e4b0       0x14 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_muluhisi3.o)
+                0x0000e4b0                __muluhisi3
  .text.libgcc.div
-                0x0000e4cc        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_muluhisi3.o)
- .text.libgcc   0x0000e4cc        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_muluhisi3.o)
+                0x0000e4c4        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_muluhisi3.o)
+ .text.libgcc   0x0000e4c4        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_muluhisi3.o)
  .text.libgcc.prologue
-                0x0000e4cc        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_muluhisi3.o)
+                0x0000e4c4        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_muluhisi3.o)
  .text.libgcc.builtins
-                0x0000e4cc        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_muluhisi3.o)
+                0x0000e4c4        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_muluhisi3.o)
  .text.libgcc.fmul
-                0x0000e4cc        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_muluhisi3.o)
+                0x0000e4c4        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_muluhisi3.o)
  .text.libgcc.fixed
-                0x0000e4cc        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_muluhisi3.o)
+                0x0000e4c4        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_muluhisi3.o)
  .text.libgcc.mul
-                0x0000e4cc        0xc /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_mulshisi3.o)
-                0x0000e4cc                __mulshisi3
-                0x0000e4d0                __mulohisi3
+                0x0000e4c4        0xc /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_mulshisi3.o)
+                0x0000e4c4                __mulshisi3
+                0x0000e4c8                __mulohisi3
  .text.libgcc.div
-                0x0000e4d8        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_mulshisi3.o)
- .text.libgcc   0x0000e4d8        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_mulshisi3.o)
+                0x0000e4d0        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_mulshisi3.o)
+ .text.libgcc   0x0000e4d0        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_mulshisi3.o)
  .text.libgcc.prologue
-                0x0000e4d8        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_mulshisi3.o)
+                0x0000e4d0        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_mulshisi3.o)
  .text.libgcc.builtins
-                0x0000e4d8        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_mulshisi3.o)
+                0x0000e4d0        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_mulshisi3.o)
  .text.libgcc.fmul
-                0x0000e4d8        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_mulshisi3.o)
+                0x0000e4d0        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_mulshisi3.o)
  .text.libgcc.fixed
-                0x0000e4d8        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_mulshisi3.o)
+                0x0000e4d0        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_mulshisi3.o)
  .text.libgcc.mul
-                0x0000e4d8        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodqi4.o)
+                0x0000e4d0        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodqi4.o)
  .text.libgcc.div
-                0x0000e4d8       0x18 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodqi4.o)
-                0x0000e4d8                __udivmodqi4
- .text.libgcc   0x0000e4f0        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodqi4.o)
+                0x0000e4d0       0x18 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodqi4.o)
+                0x0000e4d0                __udivmodqi4
+ .text.libgcc   0x0000e4e8        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodqi4.o)
  .text.libgcc.prologue
-                0x0000e4f0        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodqi4.o)
+                0x0000e4e8        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodqi4.o)
  .text.libgcc.builtins
-                0x0000e4f0        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodqi4.o)
+                0x0000e4e8        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodqi4.o)
  .text.libgcc.fmul
-                0x0000e4f0        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodqi4.o)
+                0x0000e4e8        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodqi4.o)
  .text.libgcc.fixed
-                0x0000e4f0        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodqi4.o)
+                0x0000e4e8        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodqi4.o)
  .text.avr-libc
-                0x0000e4f0       0x3a /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(atoi.o)
-                0x0000e4f0                atoi
+                0x0000e4e8       0x3a /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(atoi.o)
+                0x0000e4e8                atoi
  .text.avr-libc
-                0x0000e52a       0x22 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(memmove.o)
-                0x0000e52a                memmove
+                0x0000e522       0x22 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(memmove.o)
+                0x0000e522                memmove
  .text.avr-libc
-                0x0000e54c        0xe /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(memset.o)
-                0x0000e54c                memset
+                0x0000e544        0xe /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(memset.o)
+                0x0000e544                memset
  .text.avr-libc
-                0x0000e55a       0x1c /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(strncmp.o)
-                0x0000e55a                strncmp
+                0x0000e552       0x1c /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(strncmp.o)
+                0x0000e552                strncmp
  .text.avr-libc
-                0x0000e576       0x10 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(mul10.o)
-                0x0000e576                __mulhi_const_10
+                0x0000e56e       0x10 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(mul10.o)
+                0x0000e56e                __mulhi_const_10
  .text.avr-libc
-                0x0000e586       0x20 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(eerd_block_atmega64.o)
-                0x0000e586                __eerd_block_m64
-                0x0000e58a                __eerd_blraw_m64
+                0x0000e57e       0x20 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(eerd_block_atmega64.o)
+                0x0000e57e                __eerd_block_m64
+                0x0000e582                __eerd_blraw_m64
  .text.avr-libc
-                0x0000e5a6       0x12 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(memcpy.o)
-                0x0000e5a6                memcpy
-                0x0000e5b8                . = ALIGN (0x2)
+                0x0000e59e       0x12 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(memcpy.o)
+                0x0000e59e                memcpy
+                0x0000e5b0                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x0000e5b8        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_exit.o)
-                0x0000e5b8                exit
-                0x0000e5b8                _exit
+ .fini9         0x0000e5b0        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_exit.o)
+                0x0000e5b0                exit
+                0x0000e5b0                _exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -903,11 +903,11 @@ END GROUP
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x0000e5b8        0x4 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_exit.o)
+ .fini0         0x0000e5b0        0x4 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_exit.o)
  *(.fini0)
-                0x0000e5bc                _etext = .
+                0x0000e5b4                _etext = .
 
-.data           0x00800100       0x46 load address 0x0000e5bc
+.data           0x00800100       0x46 load address 0x0000e5b4
                 0x00800100                PROVIDE (__data_start, .)
  *(.data)
  .data          0x00800100        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/crtm64.o
@@ -962,7 +962,7 @@ END GROUP
                 0x00800146                _edata = .
                 0x00800146                PROVIDE (__data_end, .)
 
-.bss            0x00800146      0xe9f
+.bss            0x00800146      0xea0
                 0x00800146                PROVIDE (__bss_start, .)
  *(.bss)
  .bss           0x00800146        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/crtm64.o
@@ -1062,57 +1062,58 @@ END GROUP
                 0x00800ddc                s_timer
                 0x00800dfc                PopupData
                 0x00800e00                Xmem
- .bss           0x00800e5d      0x185 obj/eleres.o
+ .bss           0x00800e5d      0x186 obj/eleres.o
                 0x00800e5d                DT
-                0x00800f9f                stat_frame
-                0x00800fa1                Rx_count
-                0x00800fa2                Rxbuff
- .bss           0x00800fe2        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_mulsi3.o)
- .bss           0x00800fe2        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_divmodqi4.o)
- .bss           0x00800fe2        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodhi4.o)
- .bss           0x00800fe2        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_divmodhi4.o)
- .bss           0x00800fe2        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodsi4.o)
- .bss           0x00800fe2        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_divmodsi4.o)
- .bss           0x00800fe2        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_negsi2.o)
- .bss           0x00800fe2        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_exit.o)
- .bss           0x00800fe2        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_tablejump.o)
- .bss           0x00800fe2        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_copy_data.o)
- .bss           0x00800fe2        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_clear_bss.o)
- .bss           0x00800fe2        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_ctors.o)
- .bss           0x00800fe2        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_mulhisi3.o)
- .bss           0x00800fe2        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_umulhisi3.o)
- .bss           0x00800fe2        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_usmulhisi3.o)
- .bss           0x00800fe2        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_muluhisi3.o)
- .bss           0x00800fe2        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_mulshisi3.o)
- .bss           0x00800fe2        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodqi4.o)
- .bss           0x00800fe2        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(atoi.o)
- .bss           0x00800fe2        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(memmove.o)
- .bss           0x00800fe2        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(memset.o)
- .bss           0x00800fe2        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(strncmp.o)
- .bss           0x00800fe2        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(mul10.o)
- .bss           0x00800fe2        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(eerd_block_atmega64.o)
- .bss           0x00800fe2        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(memcpy.o)
+                0x00800f9f                date_is_recived
+                0x00800fa0                stat_frame
+                0x00800fa2                Rx_count
+                0x00800fa3                Rxbuff
+ .bss           0x00800fe3        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_mulsi3.o)
+ .bss           0x00800fe3        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_divmodqi4.o)
+ .bss           0x00800fe3        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodhi4.o)
+ .bss           0x00800fe3        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_divmodhi4.o)
+ .bss           0x00800fe3        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodsi4.o)
+ .bss           0x00800fe3        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_divmodsi4.o)
+ .bss           0x00800fe3        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_negsi2.o)
+ .bss           0x00800fe3        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_exit.o)
+ .bss           0x00800fe3        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_tablejump.o)
+ .bss           0x00800fe3        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_copy_data.o)
+ .bss           0x00800fe3        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_clear_bss.o)
+ .bss           0x00800fe3        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_ctors.o)
+ .bss           0x00800fe3        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_mulhisi3.o)
+ .bss           0x00800fe3        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_umulhisi3.o)
+ .bss           0x00800fe3        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_usmulhisi3.o)
+ .bss           0x00800fe3        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_muluhisi3.o)
+ .bss           0x00800fe3        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_mulshisi3.o)
+ .bss           0x00800fe3        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodqi4.o)
+ .bss           0x00800fe3        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(atoi.o)
+ .bss           0x00800fe3        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(memmove.o)
+ .bss           0x00800fe3        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(memset.o)
+ .bss           0x00800fe3        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(strncmp.o)
+ .bss           0x00800fe3        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(mul10.o)
+ .bss           0x00800fe3        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(eerd_block_atmega64.o)
+ .bss           0x00800fe3        0x0 /home/marek/Programy/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(memcpy.o)
  *(.bss*)
  .bss._ZZN10audioQueue6driverEvE11toneCounter
-                0x00800fe2        0x1 obj/er9x.o
-                0x00800fe2                _ZZN10audioQueue6driverEvE11toneCounter
- .bss._ZZ14checkSlaveModevE13lastSlaveMode
                 0x00800fe3        0x1 obj/er9x.o
-                0x00800fe3                _ZZ14checkSlaveModevE13lastSlaveMode
- .bss._ZZ14checkSlaveModevE10checkDelay
+                0x00800fe3                _ZZN10audioQueue6driverEvE11toneCounter
+ .bss._ZZ14checkSlaveModevE13lastSlaveMode
                 0x00800fe4        0x1 obj/er9x.o
-                0x00800fe4                _ZZ14checkSlaveModevE10checkDelay
+                0x00800fe4                _ZZ14checkSlaveModevE13lastSlaveMode
+ .bss._ZZ14checkSlaveModevE10checkDelay
+                0x00800fe5        0x1 obj/er9x.o
+                0x00800fe5                _ZZ14checkSlaveModevE10checkDelay
  *(COMMON)
-                0x00800fe5                PROVIDE (__bss_end, .)
-                0x0000e5bc                __data_load_start = LOADADDR (.data)
-                0x0000e602                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x00800fe6                PROVIDE (__bss_end, .)
+                0x0000e5b4                __data_load_start = LOADADDR (.data)
+                0x0000e5fa                __data_load_end = (__data_load_start + SIZEOF (.data))
 
-.noinit         0x00800fe5        0x0
-                0x00800fe5                PROVIDE (__noinit_start, .)
+.noinit         0x00800fe6        0x0
+                0x00800fe6                PROVIDE (__noinit_start, .)
  *(.noinit*)
-                0x00800fe5                PROVIDE (__noinit_end, .)
-                0x00800fe5                _end = .
-                0x00800fe5                PROVIDE (__heap_start, .)
+                0x00800fe6                PROVIDE (__noinit_end, .)
+                0x00800fe6                _end = .
+                0x00800fe6                PROVIDE (__heap_start, .)
 
 .eeprom         0x00810000        0x0
  *(.eeprom*)
@@ -1206,99 +1207,99 @@ END GROUP
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000    0x248bb
+.debug_info     0x00000000    0x248bd
  *(.debug_info)
- .debug_info    0x00000000     0x5223 obj/er9x.o
- .debug_info    0x00005223     0x12ac obj/stamp.o
- .debug_info    0x000064cf     0x23a1 obj/pers.o
- .debug_info    0x00008870     0x2212 obj/file.o
- .debug_info    0x0000aa82     0x2b68 obj/lcd.o
- .debug_info    0x0000d5ea     0x19e2 obj/drivers.o
- .debug_info    0x0000efcc     0x1c44 obj/templates.o
- .debug_info    0x00010c10     0x2049 obj/pulses.o
- .debug_info    0x00012c59     0x1ea0 obj/audio.o
- .debug_info    0x00014af9     0xdf47 obj/menus.o
- .debug_info    0x00022a40     0x1e7b obj/eleres.o
+ .debug_info    0x00000000     0x5217 obj/er9x.o
+ .debug_info    0x00005217     0x12ac obj/stamp.o
+ .debug_info    0x000064c3     0x23a1 obj/pers.o
+ .debug_info    0x00008864     0x2212 obj/file.o
+ .debug_info    0x0000aa76     0x2b68 obj/lcd.o
+ .debug_info    0x0000d5de     0x19e2 obj/drivers.o
+ .debug_info    0x0000efc0     0x1c44 obj/templates.o
+ .debug_info    0x00010c04     0x2049 obj/pulses.o
+ .debug_info    0x00012c4d     0x1ea0 obj/audio.o
+ .debug_info    0x00014aed     0xdf47 obj/menus.o
+ .debug_info    0x00022a34     0x1e89 obj/eleres.o
  *(.gnu.linkonce.wi.*)
 
-.debug_abbrev   0x00000000     0x34fc
+.debug_abbrev   0x00000000     0x351b
  *(.debug_abbrev)
- .debug_abbrev  0x00000000      0x799 obj/er9x.o
- .debug_abbrev  0x00000799      0x168 obj/stamp.o
- .debug_abbrev  0x00000901      0x55a obj/pers.o
- .debug_abbrev  0x00000e5b      0x552 obj/file.o
- .debug_abbrev  0x000013ad      0x4ee obj/lcd.o
- .debug_abbrev  0x0000189b      0x416 obj/drivers.o
- .debug_abbrev  0x00001cb1      0x37d obj/templates.o
- .debug_abbrev  0x0000202e      0x4ba obj/pulses.o
- .debug_abbrev  0x000024e8      0x458 obj/audio.o
- .debug_abbrev  0x00002940      0x7cd obj/menus.o
- .debug_abbrev  0x0000310d      0x3ef obj/eleres.o
+ .debug_abbrev  0x00000000      0x7b1 obj/er9x.o
+ .debug_abbrev  0x000007b1      0x168 obj/stamp.o
+ .debug_abbrev  0x00000919      0x55a obj/pers.o
+ .debug_abbrev  0x00000e73      0x552 obj/file.o
+ .debug_abbrev  0x000013c5      0x4ee obj/lcd.o
+ .debug_abbrev  0x000018b3      0x416 obj/drivers.o
+ .debug_abbrev  0x00001cc9      0x37d obj/templates.o
+ .debug_abbrev  0x00002046      0x4ba obj/pulses.o
+ .debug_abbrev  0x00002500      0x458 obj/audio.o
+ .debug_abbrev  0x00002958      0x7cd obj/menus.o
+ .debug_abbrev  0x00003125      0x3f6 obj/eleres.o
 
-.debug_line     0x00000000     0xa7a5
+.debug_line     0x00000000     0xa7ba
  *(.debug_line)
- .debug_line    0x00000000     0x1f0d obj/er9x.o
- .debug_line    0x00001f0d       0x8d obj/stamp.o
- .debug_line    0x00001f9a      0x674 obj/pers.o
- .debug_line    0x0000260e      0x6b1 obj/file.o
- .debug_line    0x00002cbf      0xafa obj/lcd.o
- .debug_line    0x000037b9      0x429 obj/drivers.o
- .debug_line    0x00003be2      0x3c4 obj/templates.o
- .debug_line    0x00003fa6      0x918 obj/pulses.o
- .debug_line    0x000048be      0x50e obj/audio.o
- .debug_line    0x00004dcc     0x54f8 obj/menus.o
- .debug_line    0x0000a2c4      0x4e1 obj/eleres.o
+ .debug_line    0x00000000     0x1f1c obj/er9x.o
+ .debug_line    0x00001f1c       0x8d obj/stamp.o
+ .debug_line    0x00001fa9      0x674 obj/pers.o
+ .debug_line    0x0000261d      0x6b1 obj/file.o
+ .debug_line    0x00002cce      0xafa obj/lcd.o
+ .debug_line    0x000037c8      0x429 obj/drivers.o
+ .debug_line    0x00003bf1      0x3c4 obj/templates.o
+ .debug_line    0x00003fb5      0x918 obj/pulses.o
+ .debug_line    0x000048cd      0x50e obj/audio.o
+ .debug_line    0x00004ddb     0x54f8 obj/menus.o
+ .debug_line    0x0000a2d3      0x4e7 obj/eleres.o
 
-.debug_frame    0x00000000     0x25ac
+.debug_frame    0x00000000     0x25a0
  *(.debug_frame)
- .debug_frame   0x00000000      0x7c8 obj/er9x.o
- .debug_frame   0x000007c8      0x1ac obj/pers.o
- .debug_frame   0x00000974      0x318 obj/file.o
- .debug_frame   0x00000c8c      0x3c8 obj/lcd.o
- .debug_frame   0x00001054       0xd4 obj/drivers.o
- .debug_frame   0x00001128       0xe0 obj/templates.o
- .debug_frame   0x00001208      0x2e0 obj/pulses.o
- .debug_frame   0x000014e8      0x12c obj/audio.o
- .debug_frame   0x00001614      0xe5c obj/menus.o
- .debug_frame   0x00002470      0x13c obj/eleres.o
+ .debug_frame   0x00000000      0x7e4 obj/er9x.o
+ .debug_frame   0x000007e4      0x1ac obj/pers.o
+ .debug_frame   0x00000990      0x318 obj/file.o
+ .debug_frame   0x00000ca8      0x3c8 obj/lcd.o
+ .debug_frame   0x00001070       0xd4 obj/drivers.o
+ .debug_frame   0x00001144       0xe0 obj/templates.o
+ .debug_frame   0x00001224      0x2e0 obj/pulses.o
+ .debug_frame   0x00001504      0x12c obj/audio.o
+ .debug_frame   0x00001630      0xe5c obj/menus.o
+ .debug_frame   0x0000248c      0x114 obj/eleres.o
 
-.debug_str      0x00000000     0x46ff
+.debug_str      0x00000000     0x470f
  *(.debug_str)
- .debug_str     0x00000000     0x209a obj/er9x.o
-                               0x22a9 (size before relaxing)
- .debug_str     0x0000209a       0x11 obj/stamp.o
+ .debug_str     0x00000000     0x20c5 obj/er9x.o
+                               0x22d4 (size before relaxing)
+ .debug_str     0x000020c5       0x11 obj/stamp.o
                                 0xa60 (size before relaxing)
- .debug_str     0x000020ab      0x415 obj/pers.o
+ .debug_str     0x000020d6      0x415 obj/pers.o
                                0x1091 (size before relaxing)
- .debug_str     0x000024c0      0x13f obj/file.o
+ .debug_str     0x000024eb      0x13f obj/file.o
                                 0xda6 (size before relaxing)
- .debug_str     0x000025ff      0x3a5 obj/lcd.o
+ .debug_str     0x0000262a      0x3a5 obj/lcd.o
                                 0xfe9 (size before relaxing)
- .debug_str     0x000029a4      0x10f obj/drivers.o
+ .debug_str     0x000029cf      0x10f obj/drivers.o
                                 0xe3e (size before relaxing)
- .debug_str     0x00002ab3      0x11a obj/templates.o
+ .debug_str     0x00002ade      0x11a obj/templates.o
                                 0xc11 (size before relaxing)
- .debug_str     0x00002bcd      0x34b obj/pulses.o
+ .debug_str     0x00002bf8      0x34b obj/pulses.o
                                 0xf76 (size before relaxing)
- .debug_str     0x00002f18       0x77 obj/audio.o
+ .debug_str     0x00002f43       0x77 obj/audio.o
                                 0xe76 (size before relaxing)
- .debug_str     0x00002f8f     0x15c8 obj/menus.o
+ .debug_str     0x00002fba     0x15c8 obj/menus.o
                                0x33a0 (size before relaxing)
- .debug_str     0x00004557      0x1a8 obj/eleres.o
-                                0xe4e (size before relaxing)
+ .debug_str     0x00004582      0x18d obj/eleres.o
+                                0xe5e (size before relaxing)
 
-.debug_loc      0x00000000    0x15533
+.debug_loc      0x00000000    0x1551e
  *(.debug_loc)
- .debug_loc     0x00000000     0x36a8 obj/er9x.o
- .debug_loc     0x000036a8      0x7d8 obj/pers.o
- .debug_loc     0x00003e80     0x1085 obj/file.o
- .debug_loc     0x00004f05     0x2469 obj/lcd.o
- .debug_loc     0x0000736e      0x6f8 obj/drivers.o
- .debug_loc     0x00007a66      0x86a obj/templates.o
- .debug_loc     0x000082d0      0xdfa obj/pulses.o
- .debug_loc     0x000090ca      0xcb1 obj/audio.o
- .debug_loc     0x00009d7b     0xb394 obj/menus.o
- .debug_loc     0x0001510f      0x424 obj/eleres.o
+ .debug_loc     0x00000000     0x36e9 obj/er9x.o
+ .debug_loc     0x000036e9      0x7d8 obj/pers.o
+ .debug_loc     0x00003ec1     0x1085 obj/file.o
+ .debug_loc     0x00004f46     0x247b obj/lcd.o
+ .debug_loc     0x000073c1      0x6f8 obj/drivers.o
+ .debug_loc     0x00007ab9      0x86a obj/templates.o
+ .debug_loc     0x00008323      0xdfa obj/pulses.o
+ .debug_loc     0x0000911d      0xcb1 obj/audio.o
+ .debug_loc     0x00009dce     0xb394 obj/menus.o
+ .debug_loc     0x00015162      0x3bc obj/eleres.o
 
 .debug_macinfo
  *(.debug_macinfo)
@@ -1342,6 +1343,7 @@ CS_STATE(unsigned char)                           obj/er9x.o
 CalcScaleNest                                     obj/menus.o
                                                   obj/er9x.o
 Check_Date()                                      obj/eleres.o
+                                                  obj/er9x.o
 Check_ELERES()                                    obj/eleres.o
                                                   obj/er9x.o
 CsTimer                                           obj/er9x.o
@@ -1680,6 +1682,8 @@ clearCurves()                                     obj/templates.o
 clearMixes()                                      obj/templates.o
                                                   obj/menus.o
 convertTelemConstant(unsigned char, signed char)  obj/menus.o
+date_is_recived                                   obj/eleres.o
+                                                  obj/er9x.o
 deleteMix(unsigned char)                          obj/menus.o
 dispFlightModename(unsigned char, unsigned char, unsigned char) obj/menus.o
 dispGvar(unsigned char, unsigned char, unsigned char, unsigned char) obj/menus.o

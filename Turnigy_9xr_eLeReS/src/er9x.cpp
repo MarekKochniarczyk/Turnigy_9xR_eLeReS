@@ -2559,10 +2559,18 @@ ISR(TIMER0_OVF_vect, ISR_NOBLOCK) //continuous timer 16ms (16MHz/1024)
 }
 
 static uint16_t getTmr16KHz () {
+
 	while (1) {
 		uint8_t hb = g_tmr16KHz;
 		uint8_t lb = TCNT0;
-		if (hb - g_tmr16KHz == 0) return (hb << 8) | lb;
+		if (hb - g_tmr16KHz == 0){
+			#ifdef ELERES
+			if(date_is_recived == true){
+				Check_Date();
+			}
+			#endif
+			return (hb << 8) | lb;
+		}
 	}
 }
 

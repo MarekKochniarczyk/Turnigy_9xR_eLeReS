@@ -16,6 +16,9 @@
 
 #ifndef eleres_h
 #define eleres_h
+
+	extern volatile bool date_is_recived;
+	void Check_Date (void);
 	void menuProc_eleres1(uint8_t event);
 	void menuProc_eleres2(uint8_t event);
 	void menuProc_eleres3(uint8_t event);
