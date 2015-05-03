@@ -18,18 +18,18 @@
 #define INDEX_MENU	1
 
 #include <stdlib.h>
-#include "er9x.h"
-#include "templates.h"
-#include "menus.h"
-#include "pulses.h"
+#include "inc/er9x.h"
+#include "inc/templates.h"
+#include "inc/menus.h"
+#include "inc/pulses.h"
 #ifdef FRSKY
 #include "frsky.h"
 #endif
 #ifdef ELERES
-#include "eleres.h"
+#include "inc/eleres.h"
 #endif
 
-#include "language.h"
+#include "inc/language.h"
 
 #define GLOBAL_COUNTDOWN	1
 
@@ -813,7 +813,7 @@ extern MixData *mixaddress(uint8_t idx);
 extern LimitData *limitaddress(uint8_t idx);
 
 const
-#include "sticks.lbm"
+#include "lbm/sticks.lbm"
 typedef PROGMEM void (*MenuFuncP_PROGMEM)(uint8_t event);
 
 #ifdef INDEX_MENU

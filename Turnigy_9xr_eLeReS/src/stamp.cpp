@@ -1,4 +1,4 @@
-#include "er9x.h"
+#include "inc/er9x.h"
 #include "stamp-er9x.h"
 
 #define STR2(s) #s

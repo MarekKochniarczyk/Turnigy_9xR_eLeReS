@@ -12,7 +12,7 @@
  *
  */
 
-#include "er9x.h"
+#include "inc/er9x.h"
 
 #define SPEAKER_OFF  PORTE &= ~(1 << OUT_E_BUZZER) // speaker output 'low'
 

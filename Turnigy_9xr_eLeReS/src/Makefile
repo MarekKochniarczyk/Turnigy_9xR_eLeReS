@@ -60,34 +60,34 @@ ifeq ($(CPU), 128)
 endif
 
 # List C++ source files here. (C dependencies are automatically generated.)
-CPPSRC = $(TARGET).cpp stamp.cpp pers.cpp file.cpp lcd.cpp drivers.cpp templates.cpp pulses.cpp audio.cpp menus.cpp
+CPPSRC = $(TARGET).cpp stamp.cpp pers.cpp  file.cpp  lcd.cpp  drivers.cpp  templates.cpp  pulses.cpp  audio.cpp  menus.cpp
 ifeq ($(BOOT),YES)
- 	CPPSRC += optiboot.cpp
+ 	CPPSRC +=  optiboot.cpp
 endif
 
 
 ifeq ($(EXT), JETI)
- 	CPPSRC += jeti.cpp
+ 	CPPSRC +=  jeti.cpp
 endif
 
 ifeq ($(EXT), FRSKY)
- 	CPPSRC += frsky.cpp
+ 	CPPSRC +=  frsky.cpp
 endif
 
 ifeq ($(EXT), ARDUPILOT)
- 	CPPSRC += ardupilot.cpp
+ 	CPPSRC +=  ardupilot.cpp
 endif
 
 ifeq ($(EXT), NMEA)
- 	CPPSRC += nmea.cpp
+ 	CPPSRC +=  nmea.cpp
 endif
 
 ifeq ($(EXT), ELERES)
- 	CPPSRC += eleres.cpp
+ 	CPPSRC +=  eleres.cpp
 endif
 
 ifeq ($(CPU), 2561)
- 	CPPSRC += arduinoDue.cpp
+ 	CPPSRC +=  arduinoDue.cpp
 endif
 
 
@@ -624,7 +624,7 @@ VER = $(shell echo $$(( $(AVER) + 1 )))
 all: begin gccversion sizebefore build sizeafter end
 
 # Change the build target to build a HEX file or a library.
-build: stamp font_dblsize.lbm font.lbm sticks.lbm s9xsplash.lbm elf hex eep lss sym
+build: stamp lbm/font_dblsize.lbm lbm/font.lbm lbm/sticks.lbm lbm/s9xsplash.lbm elf hex eep lss sym
 #build: lib
 
 

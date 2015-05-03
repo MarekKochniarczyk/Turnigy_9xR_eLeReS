@@ -19,10 +19,10 @@
 #include <stdio.h>
 #include <string.h>
 
-#include "er9x.h"
-#include "eleres.h"
+#include "inc/er9x.h"
+#include "inc/eleres.h"
 const
-#include "ant.lbm"
+#include "lbm/ant.lbm"
 
 //#define VALSTR(val)  (rbuf[val][0] ? rbuf[val] : val_unknown)
 #define APSIZE (BSS | DBLSIZE)

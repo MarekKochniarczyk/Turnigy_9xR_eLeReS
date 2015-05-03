@@ -1,6 +1,6 @@
-#include "er9x.h"
-#include "pulses.h"
-#include "menus.h"
+#include "inc/er9x.h"
+#include "inc/pulses.h"
+#include "inc/menus.h"
 
 extern struct t_latency g_latency;
 

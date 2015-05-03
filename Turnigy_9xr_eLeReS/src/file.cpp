@@ -15,7 +15,7 @@
  */
 
 
-#include "er9x.h"
+#include "inc/er9x.h"
 #include "stdio.h"
 #include "inttypes.h"
 #include "string.h"

@@ -13,18 +13,18 @@
  * GNU General Public License for more details.
  *
  */
-
-#include "er9x.h"
 #include <stdlib.h>
-#include "language.h"
-#include "pulses.h"
-#include "lcd.h"
-#include "menus.h"
+
+#include "inc/er9x.h"
+#include "inc/language.h"
+#include "inc/pulses.h"
+#include "inc/lcd.h"
+#include "inc/menus.h"
 
 // Next two lines swapped as new complier/linker reverses them in memory!
 const
-#include "s9xsplash.lbm"
-#include "splashmarker.h"
+#include "lbm/s9xsplash.lbm"
+#include "inc/splashmarker.h"
 /*
  mode1 rud ele thr ail
  mode2 rud thr ele ail

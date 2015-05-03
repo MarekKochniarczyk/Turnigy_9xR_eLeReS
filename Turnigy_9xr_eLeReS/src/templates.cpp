@@ -37,9 +37,9 @@
  *
  */
 
-#include "er9x.h"
-#include "templates.h"
-#include "language.h"
+#include "inc/er9x.h"
+#include "inc/templates.h"
+#include "inc/language.h"
 
 #ifndef NO_TEMPLATES
 

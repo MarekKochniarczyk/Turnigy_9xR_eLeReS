@@ -14,7 +14,7 @@
  *
  */
 
-#include "er9x.h"
+#include "inc/er9x.h"
 #include <stdlib.h>
 
 //#define LCD_2_CS		1
@@ -38,13 +38,13 @@ const prog_uint8_t APM _bitmask[]= { 1,2,4,8,16,32,64,128 } ;
 #define XBITMASK(bit) pgm_read_byte( _bitmask + bit )
 
 const prog_uchar APM font[] = {
-#include "font.lbm"
+#include "lbm/font.lbm"
 };
 
 #define font_5x8_x20_x7f (font)
 
 const prog_uchar APM font_dblsize[] = {
-#include "font_dblsize.lbm"
+#include "lbm/font_dblsize.lbm"
 };
 
 #define font_10x16_x20_x7f (font_dblsize)

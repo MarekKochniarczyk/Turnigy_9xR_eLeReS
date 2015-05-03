@@ -14,10 +14,10 @@
  *
  */
 
-#include "er9x.h"
+#include "inc/er9x.h"
 #include <stdlib.h>
-#include "templates.h"
-#include "language.h"
+#include "inc/templates.h"
+#include "inc/language.h"
 
 #ifdef FRSKY
 #include "frsky.h"
