@@ -52,7 +52,7 @@ OBJDIR = obj
 # Enable JETI-Telemetry or FrSky Telemetry reception on UART0
 # For this option you need to modify your hardware!
 # More information at [insertURLhere]
-EXT = STD
+EXT = ELERES
 
 
 ifeq ($(CPU), 128)

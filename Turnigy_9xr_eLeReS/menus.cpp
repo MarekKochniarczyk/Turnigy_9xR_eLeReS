@@ -25,6 +25,9 @@
 #ifdef FRSKY
 #include "frsky.h"
 #endif
+#ifdef ELERES
+#include "eleres.h"
+#endif
 
 #include "language.h"
 
@@ -4925,8 +4928,8 @@ void menuProc0(uint8_t event) {
 				g_eeGeneral.view = view | tview;
 				audioDefevent(AU_MENUS);
 #elif defined(ELERES)
-				ELERES_EnableRXD(); // enable eLeReS reception
-				chainMenu(menuProceLeReS);
+		ELERES_EnableRXD(); // enable eLeReS reception
+		chainMenu(menuProceLeReS);
 #else
 				pushMenu(menuProcStatistic);
 #endif
