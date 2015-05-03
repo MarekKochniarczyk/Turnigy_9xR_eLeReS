@@ -25,7 +25,7 @@ const
 #include "lbm/ant.lbm"
 
 
-#define RX_BUFF_SIZE	64
+#define RX_BUFF_SIZE	80
 #define MAX_COUNT_NO_FRAME 100 //200*10ms = 2000ms
 
 uint8_t Rxbuff[RX_BUFF_SIZE];
@@ -186,9 +186,9 @@ void Check_Date (void){
 				DT[i].count_no_frame = 0;
 				DT[i].status = date_ok;
 			}
-
-
 	}
+
+	Rx_count = 0;
 
 }
 /*------------------------------------------------------------------------*//**
@@ -207,7 +207,6 @@ ISR (USART0_RX_vect){
 
     if(Rxbuff[Rx_count] == 0x0A && Rxbuff[Rx_count-1] == 0x0D){
     	date_is_recived = true;
-    	Rx_count = 0;
     }else if(++Rx_count >= RX_BUFF_SIZE){
     	Rx_count = 0;
    	}
